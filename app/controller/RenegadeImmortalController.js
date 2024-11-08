@@ -3,15 +3,15 @@ const console = require('console');
 const { withErrorHandling } = require('function/function')
 const { getApiEden, globalUpdate, eden } = require('service/renegadeImmortalService');
 
-const ri = withErrorHandling(async (chatId, value, bot) => {
+const ri = withErrorHandling(async (msg, arg, chat) => {
     let apikey = await getApiEden();
-    if(!apikey) return bot.sendMessage(chatId, 'Saldo apikey sharing admin telah habis, coba kembali');
+    if(!apikey) return await chat.sendMessage('Saldo apikey sharing admin telah habis, coba kembali');
 
-    if(value.startsWith('updateglobal')) return globalUpdate(value, chatId, bot);
-    if(!value) return bot.sendMessage(chatId, 'Command salah/kurang');
+    if(arg.startsWith('updateglobal')) return globalUpdate(arg, chat);
+    if(!arg) return await chat.sendMessage('Command salah/kurang');
 
-    const response = await eden(value, apikey)
-    await bot.sendMessage(chatId, response);
+    const response = await eden(arg, apikey)
+    await chat.sendMessage(response);
 })
 
 module.exports = {

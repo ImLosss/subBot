@@ -42,17 +42,17 @@ async function getApiEden() {
     return false; // Return false if no valid API key is found
 }
 
-async function globalUpdate(value,chatId, bot) {
+async function globalUpdate(arg, chat) {
     let config = fs.readFileSync(`./config.json`, 'utf-8');
     config = JSON.parse(config);
 
-    value = cutVal(value, 1);
+    arg = cutVal(arg, 1);
 
-    config.GLOBAL_CHAT_RENEGADE = value;
+    config.GLOBAL_CHAT_RENEGADE = arg;
 
     fs.writeFileSync('./config.json', JSON.stringify(config, null, 2));
 
-    return bot.sendMessage(chatId, "Data berhasil di update");
+    return await chat.sendMessage("Data berhasil di update");
 }
 
 async function eden(prompt, apikey) {

@@ -5,13 +5,6 @@ const fs = require('fs');
 const console = require('console');
 const lockfile = require('proper-lockfile');
 
-function getValue(msg) {
-    let text = msg.text;
-    text = text.slice(msg.entities[0].length+1, text.length);
-
-    return text;
-}
-
 function sleep(ms) {
     return new Promise(resolve => {
         const intervalId = setInterval(() => {
@@ -84,5 +77,5 @@ const withErrorHandling = (fn) => {
 };
 
 module.exports = {
-    getValue, getTime, readJSONFileSync, writeJSONFileSync, sleep, withErrorHandling, cutVal
+    getTime, readJSONFileSync, writeJSONFileSync, sleep, withErrorHandling, cutVal
 }
