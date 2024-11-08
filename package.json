@@ -1,0 +1,25 @@
+{
+  "author": "https://github.com/ImLosss",
+  "scripts": {
+    "start": "nodemon index.js",
+    "restart": "nodemon index.js"
+  },
+  "dependencies": {
+    "mineflayer": "^4.20.1",
+    "mineflayer-item-map-downloader": "^1.3.0",
+    "module-alias": "^2.2.3",
+    "moment-timezone": "^0.5.45",
+    "node-telegram-bot-api": "^0.66.0",
+    "nodemon": "^3.1.4",
+    "proper-lockfile": "^4.1.2"
+  },
+  "_moduleAliases": {
+    "listeners": "./listeners",
+    "import": "./app/service/import",
+    "function": "./app/function",
+    "console": "./app/logs/console",
+    "controller": "./app/controller",
+    "service": "./app/service",
+    "config": "./config"
+  }
+}
