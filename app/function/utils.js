@@ -27,6 +27,32 @@ function getLocation() {
     return null;
 }
 
+function getLocationError() {
+    const error = new Error();
+    const stack = error.stack.split('\n');
+
+    const projectRoot = getProjectRoot(__dirname);
+
+    // Mulai dari elemen ke-2 untuk melewati baris pertama yang merupakan lokasi Error dibuat
+    for (let i = 4; i < stack.length; i++) {
+        const callerLine = stack[i];
+        const filePathMatch = callerLine.match(/\((.*):(\d+):(\d+)\)/) || callerLine.match(/at (.*):(\d+):(\d+)/);
+
+        if (filePathMatch) {
+            const fullPath = filePathMatch[0];
+            if (fullPath && fullPath.includes(projectRoot) && !fullPath.includes('node:internal/modules') && !fullPath.includes('service/utils.js') && !fullPath.includes('service/utils.js')) {
+                
+                // console.log(fullPath);
+                let fileName = path.basename(fullPath); 
+                fileName = fileName.replace(/[()]/g, '');
+
+                return fileName;
+            }
+        }
+    }
+    return null;
+}
+
 function removeFromArray(arr, value) {
     if (value == 'reset') {
         arr.splice(0, arr.length); // Hapus semua elemen dari array
@@ -82,5 +108,5 @@ function deleteFile(dir) {
 
 
 module.exports = {
-    getLocation, injectTitle, deleteFile, removeFromArray
+    getLocation, getLocationError, injectTitle, deleteFile, removeFromArray
 };

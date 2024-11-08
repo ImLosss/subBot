@@ -1,13 +1,13 @@
 const fs = require('fs');
 const moment = require('moment-timezone');
 const lockfile = require('proper-lockfile');
-const { getLocation } = require('../function/utils');
+const { getLocation, getLocationError } = require('../function/utils');
 
 async function error(errorMsg) {
     try {
         // Tentukan zona waktu Makassar
         const time = getTime();
-        const file = getLocation();
+        const file = getLocationError();
 
         console.log(`[${ time } / error] ${ errorMsg.message }`);
 
