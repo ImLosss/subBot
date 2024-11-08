@@ -52,5 +52,11 @@
     "date": "2024-11-08 / 20:36",
     "location": "setupClient.js:29:29",
     "message": "QR code successfully saved as qrcode.png"
+  },
+  {
+    "type": "info",
+    "date": "2024-11-08 / 20:38",
+    "location": "setupClient.js:29:29",
+    "message": "QR code successfully saved as qrcode.png"
   }
 ]
