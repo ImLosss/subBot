@@ -1,5 +1,6 @@
 require('module-alias/register');
-
+const axios = require('axios');
+const { EDEN_APIKEY } = require('config');
 const moment = require('moment-timezone');
 const fs = require('fs');
 const console = require('console');
@@ -76,6 +77,43 @@ const withErrorHandling = (fn) => {
     };
 };
 
+async function getApiEden() {
+    for (const apikey of EDEN_APIKEY) {
+        const url = 'https://api.edenai.run/v2/text/chat';
+        const headers = {
+            'accept': 'application/json',
+            'authorization': `Bearer ${apikey}`,
+            'content-type': 'application/json'
+        };
+
+        const data = {
+            response_as_dict: true,
+            attributes_as_list: false,
+            show_base_64: true,
+            show_original_response: false,
+            temperature: 0,
+            max_tokens: 1000,
+            tool_choice: "auto",
+            providers: [
+                "openai/gpt-3.5-turbo-0125",
+            ],
+            text: "halo"
+        };
+
+        try {
+            const response = await axios.post(url, data, { headers, timeout: 120000 });
+            return apikey; // Return true if a valid API key is found
+        } catch (error) {
+
+        }
+
+        // Optional: Add a delay between requests to avoid rate limiting
+        await new Promise(resolve => setTimeout(resolve, 500)); // Delay for 1 second
+    }
+
+    return false; // Return false if no valid API key is found
+}
+
 module.exports = {
-    getTime, readJSONFileSync, writeJSONFileSync, sleep, withErrorHandling, cutVal
+    getTime, readJSONFileSync, writeJSONFileSync, sleep, withErrorHandling, cutVal, getApiEden
 }

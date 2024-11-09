@@ -34,7 +34,7 @@ function getLocationError() {
     const projectRoot = getProjectRoot(__dirname);
 
     // Mulai dari elemen ke-2 untuk melewati baris pertama yang merupakan lokasi Error dibuat
-    for (let i = 4; i < stack.length; i++) {
+    for (let i = 3; i < stack.length; i++) {
         const callerLine = stack[i];
         const filePathMatch = callerLine.match(/\((.*):(\d+):(\d+)\)/) || callerLine.match(/at (.*):(\d+):(\d+)/);
 

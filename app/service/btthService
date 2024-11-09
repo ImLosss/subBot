@@ -1,5 +1,6 @@
 require('module-alias/register');
 const console = require('console');
+const { EDEN_APIKEY } = require('config');
 const axios = require('axios');
 const { cutVal } = require('function/function');
 const fs = require('fs')
@@ -12,7 +13,7 @@ async function globalUpdate(arg, chat) {
 
     arg = cutVal(arg, 1);
 
-    config.GLOBAL_CHAT_RENEGADE = arg;
+    config.GLOBAL_CHAT_BTTH = arg;
 
     fs.writeFileSync('./config.json', JSON.stringify(config, null, 2));
 
@@ -20,7 +21,7 @@ async function globalUpdate(arg, chat) {
 }
 
 async function eden(prompt, apikey) {
-    const dir_history_chat = `database/data_chat/data_chat_ri`;
+    const dir_history_chat = `database/data_chat/data_chat_btth`;
     let config = fs.readFileSync(`./config.json`, 'utf-8');
     config = JSON.parse(config);
 
@@ -59,7 +60,7 @@ async function eden(prompt, apikey) {
             temperature: 1,
             max_tokens: 10000,
             tool_choice: "auto",
-            chatbot_global_action: config.GLOBAL_CHAT_RENEGADE,
+            chatbot_global_action: config.GLOBAL_CHAT_BTTH,
             text: prompt,
             providers: [
                 "openai/gpt-4o"

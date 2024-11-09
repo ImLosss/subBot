@@ -2,6 +2,7 @@ const fs = require('fs');
 const moment = require('moment-timezone');
 const lockfile = require('proper-lockfile');
 const { getLocation, getLocationError } = require('../function/utils');
+const CircularJSON = require('circular-json');
 
 async function error(errorMsg) {
     try {
@@ -40,7 +41,7 @@ async function log(log, type = 'info') {
 
         const time = getTime();
         if(typeof(log) == 'object') {
-            log = JSON.stringify(log);
+            log = CircularJSON.stringify(log);
             type = "object"
         }
         console.log(`[${ time } / ${ type }] ${ log }`);
@@ -71,7 +72,7 @@ async function game(log, id, type = 'ingame') {
         const file = getLocation();
 
         const time = getTime();
-        if(typeof(log) == 'object') log = JSON.stringify(log);
+        if(typeof(log) == 'object') log = CircularJSON.stringify(log);
         console.log(`[${ time } / ${ type }_${ id }] ${ log }`);
 
         let logData = readJSONFileSync(dir);

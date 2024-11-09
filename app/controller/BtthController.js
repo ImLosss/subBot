@@ -1,9 +1,9 @@
 require('module-alias/register');
 const console = require('console');
 const { withErrorHandling, getApiEden } = require('function/function')
-const { globalUpdate, eden } = require('service/renegadeImmortalService');
+const { globalUpdate, eden } = require('service/btthService');
 
-const ri = withErrorHandling(async (msg, arg, chat) => {
+const btth = withErrorHandling(async (msg, arg, chat) => {
     let apikey = await getApiEden();
     if(!apikey) return await chat.sendMessage('Saldo apikey sharing admin telah habis, coba kembali');
 
@@ -15,5 +15,5 @@ const ri = withErrorHandling(async (msg, arg, chat) => {
 })
 
 module.exports = {
-    ri
+    btth
 }
