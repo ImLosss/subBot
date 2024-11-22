@@ -1,8 +1,7 @@
 require('module-alias/register');
 const console = require('console');
-const { EDEN_APIKEY } = require('config');
 const axios = require('axios');
-const { cutVal } = require('function/function');
+const { cutVal, reqEden } = require('function/function');
 const fs = require('fs')
 
 
@@ -20,7 +19,7 @@ async function globalUpdate(arg, chat) {
     return await chat.sendMessage("Data berhasil di update");
 }
 
-async function eden(prompt, apikey) {
+async function eden(prompt) {
     const dir_history_chat = `database/data_chat/data_chat_btth`;
     let config = fs.readFileSync(`./config.json`, 'utf-8');
     config = JSON.parse(config);
@@ -44,41 +43,18 @@ async function eden(prompt, apikey) {
             chatHistory = JSON.parse(fileData);
         }
 
-        const url = 'https://api.edenai.run/v2/text/chat';
+        const response = await reqEden(config, chatHistory, prompt, config.GLOBAL_CHAT_BTTH)
 
-        const headers = {
-            'accept': 'application/json',
-            'authorization': `Bearer ${apikey}`,
-            'content-type': 'application/json'
-        };
-
-        const data = {
-            response_as_dict: true,
-            attributes_as_list: false,
-            show_base_64: true,
-            show_original_response: false,
-            temperature: 1,
-            max_tokens: 10000,
-            tool_choice: "auto",
-            chatbot_global_action: config.GLOBAL_CHAT_BTTH,
-            text: prompt,
-            providers: [
-                "openai/gpt-4o"
-            ],
-            previous_history: chatHistory
-        };
-
-        const response = await axios.post(url, data, { headers, timeout: 120000 })
-        const response_message = response.data['openai/gpt-4o'].generated_text;
+        if(!response.status) return response.message;
 
         chatHistory.push({role: "user", message: prompt});
-        chatHistory.push({role: "assistant", message: response_message});
+        chatHistory.push({role: "assistant", message: response.message});
 
         if(chatHistory.length > 10) chatHistory.splice(0, 2);
 
         fs.writeFileSync(dir_history_chat, JSON.stringify(chatHistory));
 
-        return response_message;
+        return response.message;
     }
 }
 
