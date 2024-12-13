@@ -21,6 +21,8 @@ async function globalUpdate(arg, chat) {
 
 async function eden(prompt) {
     const dir_history_chat = `database/data_chat/data_chat_ri`;
+
+    let update = false;
     let config = fs.readFileSync(`./config.json`, 'utf-8');
     config = JSON.parse(config);
 
@@ -43,6 +45,11 @@ async function eden(prompt) {
             chatHistory = JSON.parse(fileData);
         }
 
+        if(prompt.startsWith('update')) {
+            update = true;
+            prompt = cutVal(prompt, 1);
+        }
+
         const response = await reqEden(config, chatHistory, prompt, config.GLOBAL_CHAT_RENEGADE)
 
         if(!response.status) return response.message;
@@ -52,7 +59,7 @@ async function eden(prompt) {
 
         if(chatHistory.length > 10) chatHistory.splice(0, 2);
 
-        fs.writeFileSync(dir_history_chat, JSON.stringify(chatHistory));
+        if(update) fs.writeFileSync(dir_history_chat, JSON.stringify(chatHistory));
 
         return response.message;
     }

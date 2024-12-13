@@ -2,7 +2,9 @@ require('module-alias/register');
 const fs = require('fs');
 const console = require('console');
 const { ri } = require('controller/RenegadeImmortalController');
+const { pw } = require('controller/PerfectWorldController');
 const { btth } = require('controller/BtthController');
+const { ms } = require('controller/MergedSubController');
 const { cutVal } = require("function/function");
 
 module.exports = (function() {
@@ -11,6 +13,8 @@ module.exports = (function() {
             const prefixFunctions = {
                 'ri': (msg, sender, client, arg, chat) => ri(msg, arg, chat),
                 'btth': (msg, sender, client, arg, chat) => btth(msg, arg, chat),
+                'pw': (msg, sender, client, arg, chat) => pw(msg, arg, chat),
+                'ms': (msg, sender, client, arg, chat) => ms(msg, arg, chat),
             };    
             
             const prefix = ['/', '!'];
@@ -19,8 +23,7 @@ module.exports = (function() {
             config = JSON.parse(config);
 
             const chat = await msg.getChat();
-
-            chat.sendSeen();
+            
             bot.sendPresenceAvailable();
 
             const text = msg.body.toLowerCase() || '';

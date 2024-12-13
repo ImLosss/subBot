@@ -104,7 +104,7 @@ async function reqEden(config, chatHistory, prompt, globalChat) {
         };
 
         try {
-            const response = await axios.post(url, data, { headers, timeout: 240000 });
+            const response = await axios.post(url, data, { headers, timeout: 280000 });
             const response_message = response.data['openai/gpt-4o-mini'].generated_text;
 
             // console.log(response.data);

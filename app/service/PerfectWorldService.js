@@ -4,13 +4,15 @@ const axios = require('axios');
 const { cutVal, reqEden } = require('function/function');
 const fs = require('fs')
 
+
+
 async function globalUpdate(arg, chat) {
     let config = fs.readFileSync(`./config.json`, 'utf-8');
     config = JSON.parse(config);
 
     arg = cutVal(arg, 1);
 
-    config.GLOBAL_CHAT_BTTH = arg;
+    config.GLOBAL_CHAT_PW = arg;
 
     fs.writeFileSync('./config.json', JSON.stringify(config, null, 2));
 
@@ -18,7 +20,7 @@ async function globalUpdate(arg, chat) {
 }
 
 async function eden(prompt) {
-    const dir_history_chat = `database/data_chat/data_chat_btth`;
+    const dir_history_chat = `database/data_chat/data_chat_pw`;
 
     let update = false;
     let config = fs.readFileSync(`./config.json`, 'utf-8');
@@ -48,7 +50,7 @@ async function eden(prompt) {
             prompt = cutVal(prompt, 1);
         }
 
-        const response = await reqEden(config, chatHistory, prompt, config.GLOBAL_CHAT_BTTH)
+        const response = await reqEden(config, chatHistory, prompt, config.GLOBAL_CHAT_PW)
 
         if(!response.status) return response.message;
 

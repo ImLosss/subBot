@@ -257,5 +257,12 @@
     "errorLocation": "function.js:74:21",
     "errorMessage": "Unexpected non-whitespace character after JSON at position 38660",
     "error": "Unexpected non-whitespace character after JSON at position 38660\nSyntaxError: Unexpected non-whitespace character after JSON at position 38660\n    at JSON.parse (<anonymous>)\n    at eden (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\service\\renegadeImmortalService.js:43:32)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\controller\\RenegadeImmortalController.js:10:28\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\function\\function.js:72:19\n    at Object.ri (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\listeners\\commandHandler.js:12:59)\n    at Client.<anonymous> (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\listeners\\commandHandler.js:40:64)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+  },
+  {
+    "type": "Error",
+    "date": "2024-12-05 / 17:42",
+    "errorLocation": "function.js:74:21",
+    "errorMessage": "Unexpected end of JSON input",
+    "error": "Unexpected end of JSON input\nSyntaxError: Unexpected end of JSON input\n    at JSON.parse (<anonymous>)\n    at eden (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\service\\PerfectWorldService.js:43:32)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\controller\\PerfectWorldController.js:10:28\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\function\\function.js:72:19\n    at Object.pw (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\listeners\\commandHandler.js:15:59)\n    at Client.<anonymous> (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\listeners\\commandHandler.js:42:64)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
   }
 ]
