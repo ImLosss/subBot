@@ -264,5 +264,12 @@
     "errorLocation": "function.js:74:21",
     "errorMessage": "Unexpected end of JSON input",
     "error": "Unexpected end of JSON input\nSyntaxError: Unexpected end of JSON input\n    at JSON.parse (<anonymous>)\n    at eden (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\service\\PerfectWorldService.js:43:32)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\controller\\PerfectWorldController.js:10:28\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\function\\function.js:72:19\n    at Object.pw (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\listeners\\commandHandler.js:15:59)\n    at Client.<anonymous> (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\listeners\\commandHandler.js:42:64)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+  },
+  {
+    "type": "Error",
+    "date": "2025-01-17 / 04:23",
+    "errorLocation": "function.js:74:21",
+    "errorMessage": "chatHistoryUpdate is not defined",
+    "error": "chatHistoryUpdate is not defined\nReferenceError: chatHistoryUpdate is not defined\n    at eden (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\service\\SeeuService.js:66:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\controller\\SeeuController.js:19:22\n    at async D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:72:13"
   }
 ]

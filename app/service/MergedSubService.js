@@ -18,17 +18,49 @@ async function globalUpdate(arg, chat) {
 }
 
 async function eden(prompt) {
+    const dir_history_chat = `database/data_chat/data_chat_ms`;
+
+    let update = false;
     let config = fs.readFileSync(`./config.json`, 'utf-8');
     config = JSON.parse(config);
-    let chatHistory = [];
 
-    const response = await reqEden(config, chatHistory, prompt, config.GLOBAL_CHAT_MERGED)
+    if(prompt == "reset"){
+        if (fs.existsSync(dir_history_chat)){
+            fs.unlink(`./${ dir_history_chat }`, (err) => {
+                if (err) {
+                    console.error(err);
+                } 
+            });
+            return 'berhasil menghapus riwayat chat';
+        } else {
+            return 'Gagal : Tidak menemukan riwayat chat';
+        }
+    } else {
+        let chatHistory = [];
+        
+        if(fs.existsSync(dir_history_chat)) {
+            const fileData = fs.readFileSync(dir_history_chat, 'utf-8');
+            chatHistory = JSON.parse(fileData);
+        }
 
-    if(!response.status) return response.message;
+        if(prompt.startsWith('update')) {
+            update = true;
+            prompt = cutVal(prompt, 1);
+        }
 
-    if(chatHistory.length > 10) chatHistory.splice(0, 2);
+        const response = await reqEden(config, chatHistory, prompt, config.GLOBAL_CHAT_MS)
 
-    return response.message;
+        if(!response.status) return response.message;
+
+        chatHistory.push({role: "user", message: prompt});
+        chatHistory.push({role: "assistant", message: response.message});
+
+        if(chatHistory.length > 10) chatHistory.splice(0, 2);
+
+        if(update) fs.writeFileSync(dir_history_chat, JSON.stringify(chatHistory));
+
+        return response.message;
+    }
 }
 
 async function reqEden(config, chatHistory, prompt, globalChat) {

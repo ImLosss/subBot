@@ -76,6 +76,87 @@ const withErrorHandling = (fn) => {
     };
 };
 
+async function reqEdenMulti(config, globalChat, prompt, media) {
+    let error;
+    for (const apikey of config["EDEN_APIKEY_2"]) {
+        const url = 'https://api.edenai.run/v2/multimodal/chat';
+
+        // Path ke file gambar
+        const imagePath = './doc.pdf';
+
+        // Membaca file gambar secara sinkron
+        const imageBuffer = fs.readFileSync(imagePath);
+
+        // Konversi buffer ke Base64
+        const base64Image = imageBuffer.toString('base64');
+
+        const headers = {
+            'accept': 'application/json',
+            'authorization': `Bearer ${apikey}`,
+            'content-type': 'application/json'
+        };
+
+        const data = {
+            response_as_dict: true,
+            attributes_as_list: false,
+            show_base_64: true,
+            show_original_response: false,
+            temperature: 1,
+            max_tokens: 16384,
+            tool_choice: "auto",
+            chatbot_global_action: globalChat,
+            messages: [
+                {
+                    role: "user",
+                    content: [ 
+                        {
+                            type: "text",
+                            content: {
+                                text: prompt
+                            }
+                        },
+                        {
+                            type: "media_base64",
+                            content: {
+                                media_base64: media.data,
+                                media_type: media.mimetype
+                            }
+                        }
+                    ]
+                }
+            ],
+            providers: [
+                "openai/gpt-4o-mini"
+            ]
+        };
+
+        try {
+            const response = await axios.post(url, data, { headers, timeout: 280000 });
+            const response_message = response.data['openai/gpt-4o-mini'].generated_text;
+
+            console.log(response.data['openai/gpt-4o-mini'].cost, 'cost');
+
+            if (response.data['openai/gpt-4o-mini'].status == 'fail') return { status: false, message: 'Request Timeout' }
+
+            return {
+                status: true,
+                message: response_message
+            } 
+        } catch (err) {
+            error = err.message;
+            console.log(error);
+        }
+
+        // Optional: Add a delay between requests to avoid rate limiting
+        await new Promise(resolve => setTimeout(resolve, 500)); // Delay for 1 second
+    }
+
+    return {
+        status: false,
+        message: error
+    }; // Return false if no valid API key is found
+}
+
 async function reqEden(config, chatHistory, prompt, globalChat) {
     let error;
     for (const apikey of config["EDEN_APIKEY"]) {
@@ -133,5 +214,5 @@ async function reqEden(config, chatHistory, prompt, globalChat) {
 }
 
 module.exports = {
-    getTime, readJSONFileSync, writeJSONFileSync, sleep, withErrorHandling, cutVal, reqEden
+    getTime, readJSONFileSync, writeJSONFileSync, sleep, withErrorHandling, cutVal, reqEden, reqEdenMulti
 }
