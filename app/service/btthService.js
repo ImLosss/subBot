@@ -26,27 +26,27 @@ async function eden(prompt) {
     let config = fs.readFileSync(`./config.json`, 'utf-8');
     config = JSON.parse(config);
 
-    let chatHistory = [];
-            
-    if(fs.existsSync(dir_history_chat)) {
-        const fileData = fs.readFileSync(dir_history_chat, 'utf-8');
-        chatHistory = JSON.parse(fileData);
-    }
-
     let str = "";
-    
+    let tempChatHistory = [];
     let totReq = 0;
     let totCost = 0;
     for(let prompt of prompts) {
+        let chatHistory = [];
+            
+        if(fs.existsSync(dir_history_chat)) {
+            const fileData = fs.readFileSync(dir_history_chat, 'utf-8');
+            chatHistory = JSON.parse(fileData);
+        }
+        chatHistory = chatHistory.concat(tempChatHistory);
         console.log(chatHistory);
         const response = await reqEden(config, chatHistory, prompt, config.GLOBAL_CHAT_BTTH)
 
         if(!response.status) return response.message;
 
-        chatHistory.push({role: "user", message: prompt});
-        chatHistory.push({role: "assistant", message: response.message});
+        tempChatHistory.push({role: "user", message: prompt});
+        tempChatHistory.push({role: "assistant", message: response.message});
 
-        if(chatHistory.length > 30) chatHistory.splice(0, 2);
+        if(tempChatHistory.length > 4) tempChatHistory.splice(0, 2);
 
         str+=`${ response.message }\n\n`;
 
