@@ -173,7 +173,7 @@ async function reqEden(config, chatHistory, prompt, globalChat) {
             attributes_as_list: false,
             show_base_64: true,
             show_original_response: false,
-            temperature: 1,
+            temperature: 0.5,
             max_tokens: 16384,
             tool_choice: "auto",
             chatbot_global_action: globalChat,
@@ -190,13 +190,12 @@ async function reqEden(config, chatHistory, prompt, globalChat) {
 
             // console.log(response.data);
 
-            console.log(response.data['openai/gpt-4o-mini'].cost, 'cost');
-
             if (response.data['openai/gpt-4o-mini'].status == 'fail') return { status: false, message: 'Request Timeout' }
 
             return {
                 status: true,
-                message: response_message
+                message: response_message,
+                cost: response.data['openai/gpt-4o-mini'].cost
             } 
         } catch (err) {
             error = err.message;
@@ -213,6 +212,36 @@ async function reqEden(config, chatHistory, prompt, globalChat) {
     }; // Return false if no valid API key is found
 }
 
+function splitSrt(srt, groupSize = 50) {
+  srtArr = srt.split('\n');
+  let no = 0;
+  let srtSplit = [];
+  let srtString = "";
+  for (let [index, item] of srtArr.entries()) {
+    const isLastItem = index === srtArr.length - 1;
+    item = item.trim();
+
+    if(Number(item)) {
+      if(no == 0) srtString += `${ item }\n`;
+      else if(no != groupSize) srtString += `\n${ item }\n`;
+
+      if (no == groupSize) {
+        srtSplit.push(srtString);
+        srtString = `${ item }\n`;
+        no = 0
+        // continue;
+      }
+      no = no + 1;
+    } else {
+      if(item == "" && !isLastItem) continue;
+      srtString += `${ item }\n`;
+      if (isLastItem) srtSplit.push(srtString);
+    }
+  }
+
+  return srtSplit;
+}
+
 module.exports = {
-    getTime, readJSONFileSync, writeJSONFileSync, sleep, withErrorHandling, cutVal, reqEden, reqEdenMulti
+    getTime, readJSONFileSync, writeJSONFileSync, sleep, withErrorHandling, cutVal, reqEden, reqEdenMulti, splitSrt
 }

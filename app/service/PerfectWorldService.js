@@ -1,7 +1,7 @@
 require('module-alias/register');
 const console = require('console');
 const axios = require('axios');
-const { cutVal, reqEden } = require('function/function');
+const { cutVal, reqEden, splitSrt } = require('function/function');
 const fs = require('fs')
 
 
@@ -20,6 +20,55 @@ async function globalUpdate(arg, chat) {
 }
 
 async function eden(prompt) {
+    const prompts = splitSrt(prompt);
+    const dir_history_chat = `database/data_chat/data_chat_pw`;
+
+    let config = fs.readFileSync(`./config.json`, 'utf-8');
+    config = JSON.parse(config);
+
+    let chatHistory = [];
+            
+    // if(fs.existsSync(dir_history_chat)) {
+    //     const fileData = fs.readFileSync(dir_history_chat, 'utf-8');
+    //     chatHistory = JSON.parse(fileData);
+    // }
+
+    let str = "";
+    
+    for(let prompt of prompts) {
+        console.log(chatHistory);
+        if(prompt == "reset"){
+            if (fs.existsSync(dir_history_chat)){
+                fs.unlink(`./${ dir_history_chat }`, (err) => {
+                    if (err) {
+                        console.error(err);
+                    } 
+                });
+                return 'berhasil menghapus riwayat chat';
+            } else {
+                return 'Gagal : Tidak menemukan riwayat chat';
+            }
+        } else {
+
+            const response = await reqEden(config, chatHistory, prompt, config.GLOBAL_CHAT_PW)
+
+            if(!response.status) return response.message;
+
+            chatHistory.push({role: "user", message: prompt});
+            chatHistory.push({role: "assistant", message: response.message});
+
+            if(chatHistory.length > 10) chatHistory.splice(0, 2);
+
+            // if(update) fs.writeFileSync(dir_history_chat, JSON.stringify(chatHistory));
+
+            str+=`${ response.message }\n\n`;
+        }
+    }
+
+    return str;
+}
+
+async function edenOld(prompt) {
     const dir_history_chat = `database/data_chat/data_chat_pw`;
 
     let update = false;
@@ -64,6 +113,7 @@ async function eden(prompt) {
         return response.message;
     }
 }
+
 
 module.exports = {
     globalUpdate, eden

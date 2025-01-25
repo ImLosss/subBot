@@ -271,5 +271,47 @@
     "errorLocation": "function.js:74:21",
     "errorMessage": "chatHistoryUpdate is not defined",
     "error": "chatHistoryUpdate is not defined\nReferenceError: chatHistoryUpdate is not defined\n    at eden (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\service\\SeeuService.js:66:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\controller\\SeeuController.js:19:22\n    at async D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:72:13"
+  },
+  {
+    "type": "Error",
+    "date": "2025-01-18 / 18:57",
+    "errorLocation": "function.js:74:21",
+    "errorMessage": "ENOENT: no such file or directory, open 'D:\\Dokumenku\\Pemrograman\\Node\\subbot\\doc.pdf'",
+    "error": "ENOENT: no such file or directory, open 'D:\\Dokumenku\\Pemrograman\\Node\\subbot\\doc.pdf'\nError: ENOENT: no such file or directory, open 'D:\\Dokumenku\\Pemrograman\\Node\\subbot\\doc.pdf'\n    at Object.open (node:internal/fs/sync:78:18)\n    at Object.openSync (node:fs:565:17)\n    at Object.readFileSync (node:fs:445:35)\n    at reqEdenMulti (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:88:32)\n    at eden (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\service\\SeeuService.js:53:36)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\controller\\SeeuController.js:21:28\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:72:13"
+  },
+  {
+    "type": "Error",
+    "date": "2025-01-18 / 18:57",
+    "errorLocation": "function.js:74:21",
+    "errorMessage": "ENOENT: no such file or directory, open 'D:\\Dokumenku\\Pemrograman\\Node\\subbot\\doc.pdf'",
+    "error": "ENOENT: no such file or directory, open 'D:\\Dokumenku\\Pemrograman\\Node\\subbot\\doc.pdf'\nError: ENOENT: no such file or directory, open 'D:\\Dokumenku\\Pemrograman\\Node\\subbot\\doc.pdf'\n    at Object.open (node:internal/fs/sync:78:18)\n    at Object.openSync (node:fs:565:17)\n    at Object.readFileSync (node:fs:445:35)\n    at reqEdenMulti (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:88:32)\n    at eden (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\service\\SeeuService.js:53:36)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\controller\\SeeuController.js:21:28\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:72:13"
+  },
+  {
+    "type": "Error",
+    "date": "2025-01-18 / 18:57",
+    "errorLocation": "function.js:74:21",
+    "errorMessage": "ENOENT: no such file or directory, open 'D:\\Dokumenku\\Pemrograman\\Node\\subbot\\doc.pdf'",
+    "error": "ENOENT: no such file or directory, open 'D:\\Dokumenku\\Pemrograman\\Node\\subbot\\doc.pdf'\nError: ENOENT: no such file or directory, open 'D:\\Dokumenku\\Pemrograman\\Node\\subbot\\doc.pdf'\n    at Object.open (node:internal/fs/sync:78:18)\n    at Object.openSync (node:fs:565:17)\n    at Object.readFileSync (node:fs:445:35)\n    at reqEdenMulti (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:88:32)\n    at eden (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\service\\SeeuService.js:53:36)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\controller\\SeeuController.js:21:28\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:72:13"
+  },
+  {
+    "type": "Error",
+    "date": "2025-01-18 / 18:58",
+    "errorLocation": "function.js:74:21",
+    "errorMessage": "ENOENT: no such file or directory, open 'D:\\Dokumenku\\Pemrograman\\Node\\subbot\\doc.pdf'",
+    "error": "ENOENT: no such file or directory, open 'D:\\Dokumenku\\Pemrograman\\Node\\subbot\\doc.pdf'\nError: ENOENT: no such file or directory, open 'D:\\Dokumenku\\Pemrograman\\Node\\subbot\\doc.pdf'\n    at Object.open (node:internal/fs/sync:78:18)\n    at Object.openSync (node:fs:565:17)\n    at Object.readFileSync (node:fs:445:35)\n    at reqEdenMulti (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:88:32)\n    at eden (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\service\\SeeuService.js:53:36)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\controller\\SeeuController.js:21:28\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:72:13"
+  },
+  {
+    "type": "Error",
+    "date": "2025-01-18 / 18:58",
+    "errorLocation": "function.js:74:21",
+    "errorMessage": "ENOENT: no such file or directory, open 'D:\\Dokumenku\\Pemrograman\\Node\\subbot\\doc.pdf'",
+    "error": "ENOENT: no such file or directory, open 'D:\\Dokumenku\\Pemrograman\\Node\\subbot\\doc.pdf'\nError: ENOENT: no such file or directory, open 'D:\\Dokumenku\\Pemrograman\\Node\\subbot\\doc.pdf'\n    at Object.open (node:internal/fs/sync:78:18)\n    at Object.openSync (node:fs:565:17)\n    at Object.readFileSync (node:fs:445:35)\n    at reqEdenMulti (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:88:32)\n    at eden (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\service\\SeeuService.js:53:36)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\controller\\SeeuController.js:21:28\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:72:13"
+  },
+  {
+    "type": "Error",
+    "date": "2025-01-18 / 18:58",
+    "errorLocation": "function.js:74:21",
+    "errorMessage": "ENOENT: no such file or directory, open 'D:\\Dokumenku\\Pemrograman\\Node\\subbot\\doc.pdf'",
+    "error": "ENOENT: no such file or directory, open 'D:\\Dokumenku\\Pemrograman\\Node\\subbot\\doc.pdf'\nError: ENOENT: no such file or directory, open 'D:\\Dokumenku\\Pemrograman\\Node\\subbot\\doc.pdf'\n    at Object.open (node:internal/fs/sync:78:18)\n    at Object.openSync (node:fs:565:17)\n    at Object.readFileSync (node:fs:445:35)\n    at reqEdenMulti (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:88:32)\n    at eden (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\service\\SeeuService.js:53:36)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\controller\\SeeuController.js:21:28\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:72:13"
   }
 ]

@@ -18,7 +18,7 @@ module.exports = (function() {
                 'pw': (msg, sender, client, arg, chat) => pw(msg, arg, chat),
                 'ms': (msg, sender, client, arg, chat) => ms(msg, arg, chat),
                 'wdqk': (msg, sender, client, arg, chat) => wdqk(msg, arg, chat),
-                'seeu': (msg, sender, client, arg, chat) => seeu(msg, arg, chat),
+                // 'seeu': (msg, sender, client, arg, chat) => seeu(msg, arg, chat),
             };    
             
             const prefix = ['/', '!'];
