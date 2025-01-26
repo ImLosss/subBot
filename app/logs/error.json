@@ -313,5 +313,19 @@
     "errorLocation": "function.js:74:21",
     "errorMessage": "ENOENT: no such file or directory, open 'D:\\Dokumenku\\Pemrograman\\Node\\subbot\\doc.pdf'",
     "error": "ENOENT: no such file or directory, open 'D:\\Dokumenku\\Pemrograman\\Node\\subbot\\doc.pdf'\nError: ENOENT: no such file or directory, open 'D:\\Dokumenku\\Pemrograman\\Node\\subbot\\doc.pdf'\n    at Object.open (node:internal/fs/sync:78:18)\n    at Object.openSync (node:fs:565:17)\n    at Object.readFileSync (node:fs:445:35)\n    at reqEdenMulti (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:88:32)\n    at eden (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\service\\SeeuService.js:53:36)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\controller\\SeeuController.js:21:28\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:72:13"
+  },
+  {
+    "type": "Error",
+    "date": "2025-01-26 / 12:02",
+    "errorLocation": "function.js:74:21",
+    "errorMessage": "splitSrt is not defined",
+    "error": "splitSrt is not defined\nReferenceError: splitSrt is not defined\n    at eden (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\service\\renegadeImmortalService.js:20:21)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\controller\\RenegadeImmortalController.js:11:28\n    at D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:72:19\n    at Object.ri (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\listeners\\commandHandler.js:16:59)\n    at Client.<anonymous> (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\listeners\\commandHandler.js:47:64)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+  },
+  {
+    "type": "Error",
+    "date": "2025-01-26 / 14:09",
+    "errorLocation": "function.js:74:21",
+    "errorMessage": "chat is not defined",
+    "error": "chat is not defined\nReferenceError: chat is not defined\n    at edenTraining (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\service\\renegadeImmortalService.js:102:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:72:13"
   }
 ]

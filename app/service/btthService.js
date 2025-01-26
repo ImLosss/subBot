@@ -1,18 +1,17 @@
 require('module-alias/register');
 const console = require('console');
 const axios = require('axios');
-const { cutVal, reqEden, splitSrt } = require('function/function');
+const { cutVal, reqEden, splitSrt, readJSONFileSync, writeJSONFileSync } = require('function/function');
 const fs = require('fs')
 
 async function globalUpdate(arg, chat) {
-    let config = fs.readFileSync(`./config.json`, 'utf-8');
-    config = JSON.parse(config);
+    let config = readJSONFileSync(`./config.json`)
 
     arg = cutVal(arg, 1);
 
     config.GLOBAL_CHAT_BTTH = arg;
 
-    fs.writeFileSync('./config.json', JSON.stringify(config, null, 2));
+    writeJSONFileSync('./config.json', config);
 
     return await chat.sendMessage("Data berhasil di update");
 }
@@ -23,8 +22,7 @@ async function eden(prompt) {
     console.log(prompts.length, 'Prompts length after split');
     const dir_history_chat = `database/data_chat/data_chat_btth`;
 
-    let config = fs.readFileSync(`./config.json`, 'utf-8');
-    config = JSON.parse(config);
+    let config = readJSONFileSync(`./config.json`)
 
     let str = "";
     let tempChatHistory = [];
@@ -34,9 +32,9 @@ async function eden(prompt) {
         let chatHistory = [];
             
         if(fs.existsSync(dir_history_chat)) {
-            const fileData = fs.readFileSync(dir_history_chat, 'utf-8');
-            chatHistory = JSON.parse(fileData);
+            chatHistory = readJSONFileSync(dir_history_chat)
         }
+
         chatHistory = chatHistory.concat(tempChatHistory);
         console.log(chatHistory);
         const response = await reqEden(config, chatHistory, prompt, config.GLOBAL_CHAT_BTTH)
@@ -68,8 +66,7 @@ async function edenTraining(prompt) {
 
     console.log(prompt);
 
-    let config = fs.readFileSync(`./config.json`, 'utf-8');
-    config = JSON.parse(config);
+    let config = readJSONFileSync(`./config.json`)
 
     if(prompt == "reset"){
         if (fs.existsSync(dir_history_chat)){
@@ -86,8 +83,7 @@ async function edenTraining(prompt) {
         let chatHistory = [];
         
         if(fs.existsSync(dir_history_chat)) {
-            const fileData = fs.readFileSync(dir_history_chat, 'utf-8');
-            chatHistory = JSON.parse(fileData);
+            chatHistory = readJSONFileSync(dir_history_chat)
         }
 
         const response = await reqEden(config, chatHistory, prompt, config.GLOBAL_CHAT_BTTH_TRAINING);
@@ -101,7 +97,7 @@ async function edenTraining(prompt) {
 
         if(chatHistory.length > 10) chatHistory.splice(0, 2);
 
-        fs.writeFileSync(dir_history_chat, JSON.stringify(chatHistory));
+        writeJSONFileSync(dir_history_chat, chatHistory);
 
         return chat.sendMessage(response.message);
     }
