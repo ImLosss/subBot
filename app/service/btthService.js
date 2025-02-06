@@ -33,6 +33,8 @@ async function eden(prompt) {
     for(let i = 0; i < prompts.length; i++) {
         let chatHistory = [];
         let prompt = prompts[i];
+
+        console.log(line);
             
         if(fs.existsSync(dir_history_chat)) {
             chatHistory = readJSONFileSync(dir_history_chat)
