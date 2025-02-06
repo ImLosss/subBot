@@ -50,6 +50,8 @@ async function eden(prompt) {
             continue;
         }
 
+        line+=50;
+
         tempChatHistory.push({role: "user", message: prompt});
         tempChatHistory.push({role: "assistant", message: response.message});
 
