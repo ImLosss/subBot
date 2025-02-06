@@ -327,5 +327,12 @@
     "errorLocation": "function.js:74:21",
     "errorMessage": "chat is not defined",
     "error": "chat is not defined\nReferenceError: chat is not defined\n    at edenTraining (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\service\\renegadeImmortalService.js:102:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:72:13"
+  },
+  {
+    "type": "Error",
+    "date": "2025-01-30 / 18:43",
+    "errorLocation": "function.js:74:21",
+    "errorMessage": "readJSONFileSync is not defined",
+    "error": "readJSONFileSync is not defined\nReferenceError: readJSONFileSync is not defined\n    at eden (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\service\\PerfectWorldService.js:28:18)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\controller\\PerfectWorldController.js:11:28\n    at D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:72:19\n    at Object.pw (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\listeners\\commandHandler.js:18:59)\n    at Client.<anonymous> (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\listeners\\commandHandler.js:47:64)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
   }
 ]

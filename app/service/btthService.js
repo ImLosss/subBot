@@ -28,6 +28,8 @@ async function eden(prompt) {
     let tempChatHistory = [];
     let totReq = 0;
     let totCost = 0;
+    let repeatReq = 0;
+    let line = 1;
     for(let prompt of prompts) {
         let chatHistory = [];
             
@@ -36,10 +38,17 @@ async function eden(prompt) {
         }
 
         chatHistory = chatHistory.concat(tempChatHistory);
-        console.log(chatHistory);
         const response = await reqEden(config, chatHistory, prompt, config.GLOBAL_CHAT_BTTH)
 
         if(!response.status) return response.message;
+
+        totCost+=response.cost;
+        totReq+=1;
+
+        if(!response.message.startsWith(line)){
+            repeatReq+=1;
+            continue;
+        }
 
         tempChatHistory.push({role: "user", message: prompt});
         tempChatHistory.push({role: "assistant", message: response.message});
@@ -48,13 +57,11 @@ async function eden(prompt) {
 
         str+=`${ response.message }\n\n`;
 
-        totCost+=response.cost;
-        totReq+=1;
-
         await new Promise(resolve => setTimeout(resolve, 1000)); // Delay for 1 second
     }
 
     console.log(`${ totCost } (${ totReq })`, 'Total Cost');
+    console.log(repeatReq, 'RepeatRequest');
 
     return str;
 }

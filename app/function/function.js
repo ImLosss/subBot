@@ -173,13 +173,14 @@ async function reqEden(config, chatHistory, prompt, globalChat) {
             attributes_as_list: false,
             show_base_64: true,
             show_original_response: false,
-            temperature: 0.5,
+            temperature: 0,
             max_tokens: 16384,
-            tool_choice: "auto",
+            tool_choice: "none",
             chatbot_global_action: globalChat,
             text: prompt,
             providers: [
                 "openai/gpt-4o-mini"
+                // "openai/gpt-4o"
             ],
             previous_history: chatHistory
         };
