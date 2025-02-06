@@ -115,7 +115,7 @@ async function edenTraining(prompt) {
 
         writeJSONFileSync(dir_history_chat, chatHistory);
 
-        return chat.sendMessage(response.message);
+        response.message;
     }
 }
 

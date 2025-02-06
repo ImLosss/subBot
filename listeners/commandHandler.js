@@ -13,10 +13,10 @@ module.exports = (function() {
     return function(bot) {
         bot.on('message', async (msg) => {
             const prefixFunctions = {
-                'ri': (msg, sender, client, arg, chat) => ri(msg, arg, chat),
-                'btth': (msg, sender, client, arg, chat) => btth(msg, arg, chat),
-                'pw': (msg, sender, client, arg, chat) => pw(msg, arg, chat),
-                'ms': (msg, sender, client, arg, chat) => ms(msg, arg, chat),
+                // 'ri': (msg, sender, client, arg, chat) => ri(msg, arg, chat),
+                // 'btth': (msg, sender, client, arg, chat) => btth(msg, arg, chat),
+                // 'pw': (msg, sender, client, arg, chat) => pw(msg, arg, chat),
+                // 'ms': (msg, sender, client, arg, chat) => ms(msg, arg, chat),
                 'wdqk': (msg, sender, client, arg, chat) => wdqk(msg, arg, chat),
                 'seeu': (msg, sender, client, arg, chat) => seeu(msg, arg, chat),
             };    
