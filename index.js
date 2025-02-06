@@ -9,7 +9,7 @@ const bot = new Client({
     authStrategy: new LocalAuth(), // your authstrategy here
     puppeteer: {
         args: ['--no-sandbox'],
-        // executablePath: "/usr/bin/chromium-browser"
+        executablePath: "/usr/bin/chromium-browser"
     }
 });
 
