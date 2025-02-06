@@ -30,8 +30,9 @@ async function eden(prompt) {
     let totCost = 0;
     let repeatReq = 0;
     let line = 1;
-    for(let prompt of prompts) {
+    for(let i = 0; i < prompts.length; i++) {
         let chatHistory = [];
+        let prompt = prompts[i];
             
         if(fs.existsSync(dir_history_chat)) {
             chatHistory = readJSONFileSync(dir_history_chat)
@@ -46,7 +47,9 @@ async function eden(prompt) {
         totReq+=1;
 
         if(!response.message.startsWith(line)){
+            i--
             repeatReq+=1;
+            console.log('repeat');
             continue;
         }
 
