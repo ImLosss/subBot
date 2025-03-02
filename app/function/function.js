@@ -2,6 +2,7 @@ require('module-alias/register');
 const axios = require('axios');
 const moment = require('moment-timezone');
 const fs = require('fs');
+const path = require('path');
 const console = require('console');
 const lockfile = require('proper-lockfile');
 
@@ -52,6 +53,19 @@ function readJSONFileSync(filePath) {
 function writeJSONFileSync(filePath, data) {
     let release;
     try {
+        // Pastikan direktori ada sebelum menulis file
+        const dirPath = path.dirname(filePath);
+        if (!fs.existsSync(dirPath)) {
+            console.log('tess');
+            fs.mkdirSync(dirPath, { recursive: true });
+        }
+
+         // Pastikan file ada sebelum mengunci
+         if (!fs.existsSync(filePath)) {
+            console.log('Membuat file:', filePath);
+            fs.writeFileSync(filePath, '{}', 'utf-8'); // Buat file kosong agar bisa dikunci
+        }
+
         // Lock the file for writing
         release = lockfile.lockSync(filePath);
         
@@ -179,17 +193,16 @@ async function reqEden(config, chatHistory, prompt, globalChat) {
             chatbot_global_action: globalChat,
             text: prompt,
             providers: [
+                // "deepseek/DeepSeek-V3"
                 "openai/gpt-4o-mini"
-                // "openai/gpt-4o"
             ],
             previous_history: chatHistory
         };
 
         try {
-            const response = await axios.post(url, data, { headers, timeout: 280000 });
+            const response = await axios.post(url, data, { headers, timeout: 300000 });
+            console.log(response.data)
             const response_message = response.data['openai/gpt-4o-mini'].generated_text;
-
-            // console.log(response.data);
 
             if (response.data['openai/gpt-4o-mini'].status == 'fail') return { status: false, message: 'Request Timeout' }
 

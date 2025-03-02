@@ -28,18 +28,52 @@ async function eden(prompt) {
     let tempChatHistory = [];
     let totReq = 0;
     let totCost = 0;
-    for(let prompt of prompts) {
+    let repeatReq = 0;
+    for(let i = 0; i < prompts.length; i++) {
         let chatHistory = [];
+        let prompt = prompts[i];
+
+        let line = prompt.split('\n')[0].trim();
+
+        if(!Number(line)) return 'format tidak valid';
+
+        console.log(i, 'index');
             
         if(fs.existsSync(dir_history_chat)) {
             chatHistory = readJSONFileSync(dir_history_chat)
         }
 
         chatHistory = chatHistory.concat(tempChatHistory);
-        console.log(chatHistory);
         const response = await reqEden(config, chatHistory, prompt, config.GLOBAL_CHAT_RENEGADE)
 
-        if(!response.status) return response.message;
+        if(!response.status) {
+            // if(i > 0) return 
+            // return response.message;
+            i--
+            repeatReq+=1;
+            console.log(prompt, 'prompt')
+            console.log(response.message, 'response');
+            console.log('repeat');
+
+            if(repeatReq > 5) if(i > 0) return str;
+            else return 'cancelled';
+            continue;
+        }
+
+        totCost+=response.cost;
+        totReq+=1;
+
+        if(!response.message.startsWith(line)){
+            i--
+            repeatReq+=1;
+            console.log(prompt, 'prompt')
+            console.log(response.message, 'response');
+            console.log('repeat');
+
+            if(repeatReq > 5) if(i > 0) return str;
+            else return 'cancelled';
+            continue;
+        }
 
         tempChatHistory.push({role: "user", message: prompt});
         tempChatHistory.push({role: "assistant", message: response.message});
@@ -48,13 +82,11 @@ async function eden(prompt) {
 
         str+=`${ response.message }\n\n`;
 
-        totCost+=response.cost;
-        totReq+=1;
-
         await new Promise(resolve => setTimeout(resolve, 1000)); // Delay for 1 second
     }
 
     console.log(`${ totCost } (${ totReq })`, 'Total Cost');
+    console.log(repeatReq, 'RepeatRequest');
 
     return str;
 }

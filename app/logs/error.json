@@ -1,272 +1,6 @@
 [
   {
     "type": "Error",
-    "date": "2024-11-08 / 18:02",
-    "errorLocation": "function.js:81:21",
-    "errorMessage": "tess is not defined",
-    "error": "tess is not defined\nReferenceError: tess is not defined\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\controller\\RenegadeImmortalController.js:15:17\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\function\\function.js:79:13\n    at async Object.callback (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\listeners\\renegadeImmortal.js:12:13)"
-  },
-  {
-    "type": "Error",
-    "date": "2024-11-08 / 18:02",
-    "errorLocation": "function.js:81:21",
-    "errorMessage": "tess is not defined",
-    "error": "tess is not defined\nReferenceError: tess is not defined\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\controller\\RenegadeImmortalController.js:16:17\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\function\\function.js:79:13\n    at async Object.callback (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\listeners\\renegadeImmortal.js:12:13)"
-  },
-  {
-    "type": "Error",
-    "date": "2024-11-08 / 18:04",
-    "errorLocation": "function.js:81:21",
-    "errorMessage": "tess is not defined",
-    "error": "tess is not defined\nReferenceError: tess is not defined\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\controller\\RenegadeImmortalController.js:16:17\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\function\\function.js:79:13\n    at async Object.callback (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\listeners\\renegadeImmortal.js:12:13)"
-  },
-  {
-    "type": "Error",
-    "date": "2024-11-08 / 18:05",
-    "errorLocation": "function.js:81:21",
-    "errorMessage": "tess is not defined",
-    "error": "tess is not defined\nReferenceError: tess is not defined\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\controller\\RenegadeImmortalController.js:16:17\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\function\\function.js:79:13\n    at async Object.callback (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\listeners\\renegadeImmortal.js:12:13)"
-  },
-  {
-    "type": "Error",
-    "date": "2024-11-08 / 18:09",
-    "errorLocation": "function.js:81:21",
-    "errorMessage": "tess is not defined",
-    "error": "tess is not defined\nReferenceError: tess is not defined\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\controller\\RenegadeImmortalController.js:16:17\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\function\\function.js:79:13\n    at async Object.callback (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\listeners\\renegadeImmortal.js:12:13)"
-  },
-  {
-    "type": "Error",
-    "date": "2024-11-08 / 18:10",
-    "errorLocation": "..\\app\\function\\function.js:81:21",
-    "errorMessage": "tess is not defined",
-    "error": "tess is not defined\nReferenceError: tess is not defined\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\controller\\RenegadeImmortalController.js:16:17\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\function\\function.js:79:13\n    at async Object.callback (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\listeners\\renegadeImmortal.js:12:13)"
-  },
-  {
-    "type": "Error",
-    "date": "2024-11-08 / 18:11",
-    "errorLocation": "function.js:81:21",
-    "errorMessage": "tess is not defined",
-    "error": "tess is not defined\nReferenceError: tess is not defined\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\controller\\RenegadeImmortalController.js:16:17\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\function\\function.js:79:13\n    at async Object.callback (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\listeners\\renegadeImmortal.js:12:13)"
-  },
-  {
-    "type": "Error",
-    "date": "2024-11-08 / 18:12",
-    "errorLocation": "function.js:81:21",
-    "errorMessage": "tess is not defined",
-    "error": "tess is not defined\nReferenceError: tess is not defined\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\controller\\RenegadeImmortalController.js:10:17\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\function\\function.js:79:19\n    at Object.callback (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\listeners\\renegadeImmortal.js:12:19)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\node-telegram-bot-api\\src\\telegram.js:727:15\n    at Array.some (<anonymous>)\n    at TelegramBot.processUpdate (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\node-telegram-bot-api\\src\\telegram.js:713:35)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\node-telegram-bot-api\\src\\telegramPolling.js:110:22\n    at Array.forEach (<anonymous>)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\node-telegram-bot-api\\src\\telegramPolling.js:106:17\n    at tryCatcher (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Promise._settlePromiseFromHandler (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\promise.js:547:31)\n    at Promise._settlePromise (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\promise.js:604:18)\n    at Promise._settlePromise0 (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\promise.js:649:10)\n    at Promise._settlePromises (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\promise.js:729:18)\n    at _drainQueueStep (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\async.js:93:12)\n    at _drainQueue (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\async.js:86:9)\n    at Async._drainQueues (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\async.js:102:5)\n    at Async.drainQueues (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\async.js:15:14)\n    at process.processImmediate (node:internal/timers:478:21)"
-  },
-  {
-    "type": "Error",
-    "date": "2024-11-08 / 18:16",
-    "errorLocation": null,
-    "errorMessage": "tess is not defined",
-    "error": "tess is not defined\nReferenceError: tess is not defined\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\controller\\RenegadeImmortalController.js:10:17\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\function\\function.js:79:19\n    at Object.callback (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\listeners\\renegadeImmortal.js:12:19)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\node-telegram-bot-api\\src\\telegram.js:727:15\n    at Array.some (<anonymous>)\n    at TelegramBot.processUpdate (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\node-telegram-bot-api\\src\\telegram.js:713:35)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\node-telegram-bot-api\\src\\telegramPolling.js:110:22\n    at Array.forEach (<anonymous>)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\node-telegram-bot-api\\src\\telegramPolling.js:106:17\n    at tryCatcher (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Promise._settlePromiseFromHandler (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\promise.js:547:31)\n    at Promise._settlePromise (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\promise.js:604:18)\n    at Promise._settlePromise0 (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\promise.js:649:10)\n    at Promise._settlePromises (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\promise.js:729:18)\n    at _drainQueueStep (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\async.js:93:12)\n    at _drainQueue (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\async.js:86:9)\n    at Async._drainQueues (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\async.js:102:5)\n    at Async.drainQueues (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\async.js:15:14)\n    at process.processImmediate (node:internal/timers:478:21)"
-  },
-  {
-    "type": "Error",
-    "date": "2024-11-08 / 18:17",
-    "errorLocation": "function.js:81:21",
-    "errorMessage": "tess is not defined",
-    "error": "tess is not defined\nReferenceError: tess is not defined\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\controller\\RenegadeImmortalController.js:10:17\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\function\\function.js:79:19\n    at Object.callback (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\listeners\\renegadeImmortal.js:12:19)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\node-telegram-bot-api\\src\\telegram.js:727:15\n    at Array.some (<anonymous>)\n    at TelegramBot.processUpdate (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\node-telegram-bot-api\\src\\telegram.js:713:35)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\node-telegram-bot-api\\src\\telegramPolling.js:110:22\n    at Array.forEach (<anonymous>)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\node-telegram-bot-api\\src\\telegramPolling.js:106:17\n    at tryCatcher (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Promise._settlePromiseFromHandler (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\promise.js:547:31)\n    at Promise._settlePromise (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\promise.js:604:18)\n    at Promise._settlePromise0 (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\promise.js:649:10)\n    at Promise._settlePromises (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\promise.js:729:18)\n    at _drainQueueStep (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\async.js:93:12)\n    at _drainQueue (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\async.js:86:9)\n    at Async._drainQueues (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\async.js:102:5)\n    at Async.drainQueues (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\async.js:15:14)\n    at process.processImmediate (node:internal/timers:478:21)"
-  },
-  {
-    "type": "Error",
-    "date": "2024-11-08 / 18:17",
-    "errorLocation": "function.js:81:21",
-    "errorMessage": "tess is not defined",
-    "error": "tess is not defined\nReferenceError: tess is not defined\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\controller\\RenegadeImmortalController.js:10:17\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\function\\function.js:79:19\n    at Object.callback (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\listeners\\renegadeImmortal.js:12:19)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\node-telegram-bot-api\\src\\telegram.js:727:15\n    at Array.some (<anonymous>)\n    at TelegramBot.processUpdate (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\node-telegram-bot-api\\src\\telegram.js:713:35)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\node-telegram-bot-api\\src\\telegramPolling.js:110:22\n    at Array.forEach (<anonymous>)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\node-telegram-bot-api\\src\\telegramPolling.js:106:17\n    at tryCatcher (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Promise._settlePromiseFromHandler (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\promise.js:547:31)\n    at Promise._settlePromise (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\promise.js:604:18)\n    at Promise._settlePromise0 (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\promise.js:649:10)\n    at Promise._settlePromises (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\promise.js:729:18)\n    at _drainQueueStep (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\async.js:93:12)\n    at _drainQueue (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\async.js:86:9)\n    at Async._drainQueues (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\async.js:102:5)\n    at Async.drainQueues (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\async.js:15:14)\n    at process.processImmediate (node:internal/timers:478:21)"
-  },
-  {
-    "type": "Error",
-    "date": "2024-11-08 / 18:18",
-    "errorLocation": "console.js:10:22",
-    "errorMessage": "tess is not defined",
-    "error": "tess is not defined\nReferenceError: tess is not defined\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\controller\\RenegadeImmortalController.js:10:17\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\function\\function.js:79:19\n    at Object.callback (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\listeners\\renegadeImmortal.js:12:19)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\node-telegram-bot-api\\src\\telegram.js:727:15\n    at Array.some (<anonymous>)\n    at TelegramBot.processUpdate (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\node-telegram-bot-api\\src\\telegram.js:713:35)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\node-telegram-bot-api\\src\\telegramPolling.js:110:22\n    at Array.forEach (<anonymous>)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\node-telegram-bot-api\\src\\telegramPolling.js:106:17\n    at tryCatcher (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Promise._settlePromiseFromHandler (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\promise.js:547:31)\n    at Promise._settlePromise (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\promise.js:604:18)\n    at Promise._settlePromise0 (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\promise.js:649:10)\n    at Promise._settlePromises (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\promise.js:729:18)\n    at _drainQueueStep (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\async.js:93:12)\n    at _drainQueue (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\async.js:86:9)\n    at Async._drainQueues (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\async.js:102:5)\n    at Async.drainQueues (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\async.js:15:14)\n    at process.processImmediate (node:internal/timers:478:21)"
-  },
-  {
-    "type": "Error",
-    "date": "2024-11-08 / 18:19",
-    "errorLocation": "utils.js:31:19",
-    "errorMessage": "tess is not defined",
-    "error": "tess is not defined\nReferenceError: tess is not defined\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\controller\\RenegadeImmortalController.js:10:17\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\function\\function.js:79:19\n    at Object.callback (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\listeners\\renegadeImmortal.js:12:19)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\node-telegram-bot-api\\src\\telegram.js:727:15\n    at Array.some (<anonymous>)\n    at TelegramBot.processUpdate (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\node-telegram-bot-api\\src\\telegram.js:713:35)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\node-telegram-bot-api\\src\\telegramPolling.js:110:22\n    at Array.forEach (<anonymous>)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\node-telegram-bot-api\\src\\telegramPolling.js:106:17\n    at tryCatcher (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Promise._settlePromiseFromHandler (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\promise.js:547:31)\n    at Promise._settlePromise (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\promise.js:604:18)\n    at Promise._settlePromise0 (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\promise.js:649:10)\n    at Promise._settlePromises (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\promise.js:729:18)\n    at _drainQueueStep (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\async.js:93:12)\n    at _drainQueue (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\async.js:86:9)\n    at Async._drainQueues (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\async.js:102:5)\n    at Async.drainQueues (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\async.js:15:14)\n    at process.processImmediate (node:internal/timers:478:21)"
-  },
-  {
-    "type": "Error",
-    "date": "2024-11-08 / 18:19",
-    "errorLocation": "utils.js:31:19",
-    "errorMessage": "tess is not defined",
-    "error": "tess is not defined\nReferenceError: tess is not defined\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\controller\\RenegadeImmortalController.js:10:17\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\function\\function.js:79:19\n    at Object.callback (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\listeners\\renegadeImmortal.js:12:19)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\node-telegram-bot-api\\src\\telegram.js:727:15\n    at Array.some (<anonymous>)\n    at TelegramBot.processUpdate (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\node-telegram-bot-api\\src\\telegram.js:713:35)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\node-telegram-bot-api\\src\\telegramPolling.js:110:22\n    at Array.forEach (<anonymous>)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\node-telegram-bot-api\\src\\telegramPolling.js:106:17\n    at tryCatcher (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Promise._settlePromiseFromHandler (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\promise.js:547:31)\n    at Promise._settlePromise (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\promise.js:604:18)\n    at Promise._settlePromise0 (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\promise.js:649:10)\n    at Promise._settlePromises (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\promise.js:729:18)\n    at _drainQueueStep (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\async.js:93:12)\n    at _drainQueue (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\async.js:86:9)\n    at Async._drainQueues (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\async.js:102:5)\n    at Async.drainQueues (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\async.js:15:14)\n    at process.processImmediate (node:internal/timers:478:21)"
-  },
-  {
-    "type": "Error",
-    "date": "2024-11-08 / 18:20",
-    "errorLocation": "renegadeImmortal.js:12:13",
-    "errorMessage": "tess is not defined",
-    "error": "tess is not defined\nReferenceError: tess is not defined\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\controller\\RenegadeImmortalController.js:10:17\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\function\\function.js:79:19\n    at Object.callback (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\listeners\\renegadeImmortal.js:12:19)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\node-telegram-bot-api\\src\\telegram.js:727:15\n    at Array.some (<anonymous>)\n    at TelegramBot.processUpdate (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\node-telegram-bot-api\\src\\telegram.js:713:35)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\node-telegram-bot-api\\src\\telegramPolling.js:110:22\n    at Array.forEach (<anonymous>)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\node-telegram-bot-api\\src\\telegramPolling.js:106:17\n    at tryCatcher (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Promise._settlePromiseFromHandler (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\promise.js:547:31)\n    at Promise._settlePromise (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\promise.js:604:18)\n    at Promise._settlePromise0 (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\promise.js:649:10)\n    at Promise._settlePromises (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\promise.js:729:18)\n    at _drainQueueStep (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\async.js:93:12)\n    at _drainQueue (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\async.js:86:9)\n    at Async._drainQueues (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\async.js:102:5)\n    at Async.drainQueues (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\async.js:15:14)\n    at process.processImmediate (node:internal/timers:478:21)"
-  },
-  {
-    "type": "Error",
-    "date": "2024-11-08 / 18:21",
-    "errorLocation": "renegadeImmortal.js:12:13",
-    "errorMessage": "adsda is not defined",
-    "error": "adsda is not defined\nReferenceError: adsda is not defined\n    at getApiEden (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\service\\renegadeImmortalService.js:9:17)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\controller\\RenegadeImmortalController.js:12:24\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\function\\function.js:79:19\n    at Object.callback (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\listeners\\renegadeImmortal.js:12:19)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\node-telegram-bot-api\\src\\telegram.js:727:15\n    at Array.some (<anonymous>)\n    at TelegramBot.processUpdate (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\node-telegram-bot-api\\src\\telegram.js:713:35)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\node-telegram-bot-api\\src\\telegramPolling.js:110:22\n    at Array.forEach (<anonymous>)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\node-telegram-bot-api\\src\\telegramPolling.js:106:17\n    at tryCatcher (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Promise._settlePromiseFromHandler (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\promise.js:547:31)\n    at Promise._settlePromise (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\promise.js:604:18)\n    at Promise._settlePromise0 (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\promise.js:649:10)\n    at Promise._settlePromises (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\promise.js:729:18)\n    at _drainQueueStep (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\async.js:93:12)\n    at _drainQueue (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\async.js:86:9)\n    at Async._drainQueues (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\async.js:102:5)\n    at Async.drainQueues (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\async.js:15:14)\n    at process.processImmediate (node:internal/timers:478:21)"
-  },
-  {
-    "type": "Error",
-    "date": "2024-11-08 / 18:37",
-    "errorLocation": "renegadeImmortal.js:12:13",
-    "errorMessage": "ETELEGRAM: 400 Bad Request: message text is empty",
-    "error": "ETELEGRAM: 400 Bad Request: message text is empty\nError: ETELEGRAM: 400 Bad Request: message text is empty\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\node-telegram-bot-api\\src\\telegram.js:316:15\n    at tryCatcher (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Promise._settlePromiseFromHandler (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\promise.js:547:31)\n    at Promise._settlePromise (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\promise.js:604:18)\n    at Promise._settlePromise0 (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\promise.js:649:10)\n    at Promise._settlePromises (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\promise.js:729:18)\n    at _drainQueueStep (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\async.js:93:12)\n    at _drainQueue (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\async.js:86:9)\n    at Async._drainQueues (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\async.js:102:5)\n    at Async.drainQueues [as _onImmediate] (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\async.js:15:14)\n    at process.processImmediate (node:internal/timers:478:21)"
-  },
-  {
-    "type": "Error",
-    "date": "2024-11-08 / 18:38",
-    "errorLocation": "renegadeImmortal.js:12:13",
-    "errorMessage": "ETELEGRAM: 400 Bad Request: message text is empty",
-    "error": "ETELEGRAM: 400 Bad Request: message text is empty\nError: ETELEGRAM: 400 Bad Request: message text is empty\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\node-telegram-bot-api\\src\\telegram.js:316:15\n    at tryCatcher (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\util.js:16:23)\n    at Promise._settlePromiseFromHandler (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\promise.js:547:31)\n    at Promise._settlePromise (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\promise.js:604:18)\n    at Promise._settlePromise0 (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\promise.js:649:10)\n    at Promise._settlePromises (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\promise.js:729:18)\n    at _drainQueueStep (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\async.js:93:12)\n    at _drainQueue (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\async.js:86:9)\n    at Async._drainQueues (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\async.js:102:5)\n    at Async.drainQueues [as _onImmediate] (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\bluebird\\js\\release\\async.js:15:14)\n    at process.processImmediate (node:internal/timers:478:21)"
-  },
-  {
-    "type": "Error",
-    "date": "2024-11-08 / 18:54",
-    "errorLocation": "renegadeImmortal.js:12:13",
-    "errorMessage": "profil is not defined",
-    "error": "profil is not defined\nReferenceError: profil is not defined\n    at eden (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\service\\renegadeImmortalService.js:96:36)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\controller\\RenegadeImmortalController.js:13:28\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\function\\function.js:79:13\n    at async Object.callback (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\listeners\\renegadeImmortal.js:12:13)"
-  },
-  {
-    "type": "Error",
-    "date": "2024-11-08 / 19:00",
-    "errorLocation": "renegadeImmortal.js:12:13",
-    "errorMessage": "circularJSON is not defined",
-    "error": "circularJSON is not defined\nReferenceError: circularJSON is not defined\n    at eden (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\service\\renegadeImmortalService.js:114:44)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\controller\\RenegadeImmortalController.js:13:22\n    at async D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\function\\function.js:79:13\n    at async Object.callback (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\listeners\\renegadeImmortal.js:12:13)"
-  },
-  {
-    "type": "Error",
-    "date": "2024-11-08 / 21:22",
-    "errorLocation": null,
-    "errorMessage": "value is not defined",
-    "error": "value is not defined\nReferenceError: value is not defined\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\controller\\RenegadeImmortalController.js:10:5\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\function\\function.js:72:13"
-  },
-  {
-    "type": "Error",
-    "date": "2024-11-08 / 21:42",
-    "errorLocation": null,
-    "errorMessage": "Request failed with status code 402",
-    "error": "Request failed with status code 402\nError: Request failed with status code 402\n    at createError (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\axios\\lib\\adapters\\http.js:269:11)\n    at IncomingMessage.emit (node:events:526:35)\n    at endReadableNT (node:internal/streams/readable:1408:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)"
-  },
-  {
-    "type": "Error",
-    "date": "2024-11-08 / 21:45",
-    "errorLocation": null,
-    "errorMessage": "Request failed with status code 402",
-    "error": "Request failed with status code 402\nError: Request failed with status code 402\n    at createError (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\axios\\lib\\adapters\\http.js:269:11)\n    at IncomingMessage.emit (node:events:526:35)\n    at endReadableNT (node:internal/streams/readable:1408:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)"
-  },
-  {
-    "type": "Error",
-    "date": "2024-11-08 / 21:46",
-    "errorLocation": null,
-    "errorMessage": "Request failed with status code 402",
-    "error": "Request failed with status code 402\nError: Request failed with status code 402\n    at createError (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\axios\\lib\\adapters\\http.js:269:11)\n    at IncomingMessage.emit (node:events:526:35)\n    at endReadableNT (node:internal/streams/readable:1408:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)"
-  },
-  {
-    "type": "Error",
-    "date": "2024-11-09 / 13:26",
-    "errorLocation": null,
-    "errorMessage": "EDEN_APIKEY is not defined",
-    "error": "EDEN_APIKEY is not defined\nReferenceError: EDEN_APIKEY is not defined\n    at getApiEden (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\function\\function.js:80:26)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\controller\\BtthController.js:7:24\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\function\\function.js:72:19\n    at Object.btth (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\listeners\\commandHandler.js:13:61)\n    at Client.<anonymous> (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\listeners\\commandHandler.js:40:64)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
-  },
-  {
-    "type": "Error",
-    "date": "2024-11-09 / 13:30",
-    "errorLocation": "function.js:74:21",
-    "errorMessage": "EDEN_APIKEY is not defined",
-    "error": "EDEN_APIKEY is not defined\nReferenceError: EDEN_APIKEY is not defined\n    at getApiEden (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\function\\function.js:80:26)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\controller\\RenegadeImmortalController.js:7:24\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\function\\function.js:72:19\n    at Object.ri (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\listeners\\commandHandler.js:12:59)\n    at Client.<anonymous> (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\listeners\\commandHandler.js:40:64)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
-  },
-  {
-    "type": "Error",
-    "date": "2024-11-09 / 13:35",
-    "errorLocation": "function.js:74:21",
-    "errorMessage": "axios is not defined",
-    "error": "axios is not defined\nReferenceError: axios is not defined\n    at getApiEden (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\function\\function.js:103:30)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\controller\\BtthController.js:7:24\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\function\\function.js:72:19\n    at Object.btth (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\listeners\\commandHandler.js:13:61)\n    at Client.<anonymous> (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\listeners\\commandHandler.js:40:64)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
-  },
-  {
-    "type": "Error",
-    "date": "2024-11-10 / 18:43",
-    "errorLocation": "function.js:75:21",
-    "errorMessage": "Request failed with status code 402",
-    "error": "Request failed with status code 402\nError: Request failed with status code 402\n    at createError (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\axios\\lib\\adapters\\http.js:269:11)\n    at IncomingMessage.emit (node:events:526:35)\n    at endReadableNT (node:internal/streams/readable:1408:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)"
-  },
-  {
-    "type": "Error",
-    "date": "2024-11-10 / 18:44",
-    "errorLocation": "function.js:75:21",
-    "errorMessage": "Request failed with status code 402",
-    "error": "Request failed with status code 402\nError: Request failed with status code 402\n    at createError (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\axios\\lib\\adapters\\http.js:269:11)\n    at IncomingMessage.emit (node:events:526:35)\n    at endReadableNT (node:internal/streams/readable:1408:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)"
-  },
-  {
-    "type": "Error",
-    "date": "2024-11-10 / 18:45",
-    "errorLocation": "function.js:75:21",
-    "errorMessage": "Request failed with status code 402",
-    "error": "Request failed with status code 402\nError: Request failed with status code 402\n    at createError (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\axios\\lib\\adapters\\http.js:269:11)\n    at IncomingMessage.emit (node:events:526:35)\n    at endReadableNT (node:internal/streams/readable:1408:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)"
-  },
-  {
-    "type": "Error",
-    "date": "2024-11-10 / 18:46",
-    "errorLocation": "function.js:75:21",
-    "errorMessage": "Request failed with status code 402",
-    "error": "Request failed with status code 402\nError: Request failed with status code 402\n    at createError (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\axios\\lib\\adapters\\http.js:269:11)\n    at IncomingMessage.emit (node:events:526:35)\n    at endReadableNT (node:internal/streams/readable:1408:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)"
-  },
-  {
-    "type": "Error",
-    "date": "2024-11-10 / 19:26",
-    "errorLocation": "function.js:75:21",
-    "errorMessage": "timeout of 120000ms exceeded",
-    "error": "timeout of 120000ms exceeded\nError: timeout of 120000ms exceeded\n    at createError (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at RedirectableRequest.handleRequestTimeout (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\axios\\lib\\adapters\\http.js:303:16)\n    at RedirectableRequest.emit (node:events:514:28)\n    at Timeout.<anonymous> (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\follow-redirects\\index.js:210:12)\n    at listOnTimeout (node:internal/timers:573:17)\n    at process.processTimers (node:internal/timers:514:7)"
-  },
-  {
-    "type": "Error",
-    "date": "2024-11-10 / 19:54",
-    "errorLocation": "function.js:75:21",
-    "errorMessage": "Request failed with status code 402",
-    "error": "Request failed with status code 402\nError: Request failed with status code 402\n    at createError (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\node_modules\\axios\\lib\\adapters\\http.js:269:11)\n    at IncomingMessage.emit (node:events:526:35)\n    at endReadableNT (node:internal/streams/readable:1408:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)"
-  },
-  {
-    "type": "Error",
-    "date": "2024-11-22 / 20:05",
-    "errorLocation": "function.js:74:21",
-    "errorMessage": "getApiEden is not a function",
-    "error": "getApiEden is not a function\nTypeError: getApiEden is not a function\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\controller\\BtthController.js:7:24\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\function\\function.js:72:19\n    at Object.btth (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\listeners\\commandHandler.js:13:61)\n    at Client.<anonymous> (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\listeners\\commandHandler.js:40:64)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
-  },
-  {
-    "type": "Error",
-    "date": "2024-11-22 / 20:06",
-    "errorLocation": "function.js:74:21",
-    "errorMessage": "apikey is not defined",
-    "error": "apikey is not defined\nReferenceError: apikey is not defined\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\controller\\BtthController.js:10:38\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\function\\function.js:72:19\n    at Object.btth (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\listeners\\commandHandler.js:13:61)\n    at Client.<anonymous> (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\listeners\\commandHandler.js:40:64)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
-  },
-  {
-    "type": "Error",
-    "date": "2024-11-22 / 21:34",
-    "errorLocation": "function.js:74:21",
-    "errorMessage": "Unexpected non-whitespace character after JSON at position 38660",
-    "error": "Unexpected non-whitespace character after JSON at position 38660\nSyntaxError: Unexpected non-whitespace character after JSON at position 38660\n    at JSON.parse (<anonymous>)\n    at eden (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\service\\renegadeImmortalService.js:43:32)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\controller\\RenegadeImmortalController.js:10:28\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\function\\function.js:72:19\n    at Object.ri (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\listeners\\commandHandler.js:12:59)\n    at Client.<anonymous> (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\listeners\\commandHandler.js:40:64)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
-  },
-  {
-    "type": "Error",
-    "date": "2024-11-22 / 21:40",
-    "errorLocation": "function.js:74:21",
-    "errorMessage": "Unexpected non-whitespace character after JSON at position 38660",
-    "error": "Unexpected non-whitespace character after JSON at position 38660\nSyntaxError: Unexpected non-whitespace character after JSON at position 38660\n    at JSON.parse (<anonymous>)\n    at eden (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\service\\renegadeImmortalService.js:43:32)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\controller\\RenegadeImmortalController.js:10:28\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\function\\function.js:72:19\n    at Object.ri (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\listeners\\commandHandler.js:12:59)\n    at Client.<anonymous> (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\listeners\\commandHandler.js:40:64)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
-  },
-  {
-    "type": "Error",
-    "date": "2024-12-05 / 17:42",
-    "errorLocation": "function.js:74:21",
-    "errorMessage": "Unexpected end of JSON input",
-    "error": "Unexpected end of JSON input\nSyntaxError: Unexpected end of JSON input\n    at JSON.parse (<anonymous>)\n    at eden (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\service\\PerfectWorldService.js:43:32)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\controller\\PerfectWorldController.js:10:28\n    at D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\function\\function.js:72:19\n    at Object.pw (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\listeners\\commandHandler.js:15:59)\n    at Client.<anonymous> (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\listeners\\commandHandler.js:42:64)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
-  },
-  {
-    "type": "Error",
     "date": "2025-01-17 / 04:23",
     "errorLocation": "function.js:74:21",
     "errorMessage": "chatHistoryUpdate is not defined",
@@ -341,5 +75,278 @@
     "errorLocation": "function.js:74:21",
     "errorMessage": "chat is not defined",
     "error": "chat is not defined\nReferenceError: chat is not defined\n    at edenTraining (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\service\\btthService.js:118:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:72:13"
+  },
+  {
+    "type": "Error",
+    "date": "2025-02-27 / 18:51",
+    "errorLocation": "function.js:74:21",
+    "errorMessage": "Request failed with status code 422",
+    "error": "Request failed with status code 422\nError: Request failed with status code 422\n    at createError (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\adapters\\http.js:269:11)\n    at IncomingMessage.emit (node:events:526:35)\n    at endReadableNT (node:internal/streams/readable:1408:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)"
+  },
+  {
+    "type": "Error",
+    "date": "2025-02-27 / 19:00",
+    "errorLocation": "function.js:74:21",
+    "errorMessage": "read ECONNRESET",
+    "error": "read ECONNRESET\nError: read ECONNRESET\n    at TLSWrap.onStreamRead (node:internal/stream_base_commons:217:20)"
+  },
+  {
+    "type": "Error",
+    "date": "2025-02-27 / 19:39",
+    "errorLocation": "function.js:74:21",
+    "errorMessage": "Request failed with status code 502",
+    "error": "Request failed with status code 502\nError: Request failed with status code 502\n    at createError (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\adapters\\http.js:269:11)\n    at IncomingMessage.emit (node:events:526:35)\n    at endReadableNT (node:internal/streams/readable:1408:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)"
+  },
+  {
+    "type": "Error",
+    "date": "2025-02-27 / 20:01",
+    "errorLocation": "function.js:74:21",
+    "errorMessage": "read ECONNRESET",
+    "error": "read ECONNRESET\nError: read ECONNRESET\n    at TLSWrap.onStreamRead (node:internal/stream_base_commons:217:20)"
+  },
+  {
+    "type": "Error",
+    "date": "2025-02-28 / 05:07",
+    "errorLocation": "function.js:74:21",
+    "errorMessage": "consolele is not defined",
+    "error": "consolele is not defined\nReferenceError: consolele is not defined\n    at reqDeepseekTraining (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:273:5)\n    at deepseekTraining (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\service\\PerfectWorldService.js:247:32)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\controller\\PerfectWorldController.js:8:66\n    at D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:72:19\n    at Object.pw (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\listeners\\commandHandler.js:18:59)\n    at Client.<anonymous> (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\listeners\\commandHandler.js:47:64)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+  },
+  {
+    "type": "Error",
+    "date": "2025-02-28 / 05:10",
+    "errorLocation": "function.js:74:21",
+    "errorMessage": "chat is not defined",
+    "error": "chat is not defined\nReferenceError: chat is not defined\n    at deepseekTraining (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\service\\PerfectWorldService.js:249:30)\n    at async D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\controller\\PerfectWorldController.js:8:60\n    at async D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:72:13"
+  },
+  {
+    "type": "Error",
+    "date": "2025-02-28 / 05:11",
+    "errorLocation": "function.js:74:21",
+    "errorMessage": "chat is not defined",
+    "error": "chat is not defined\nReferenceError: chat is not defined\n    at deepseekTraining (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\service\\PerfectWorldService.js:249:30)\n    at async D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\controller\\PerfectWorldController.js:8:60\n    at async D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:72:13"
+  },
+  {
+    "type": "Error",
+    "date": "2025-02-28 / 05:21",
+    "errorLocation": "function.js:74:21",
+    "errorMessage": "Request failed with status code 422",
+    "error": "Request failed with status code 422\nError: Request failed with status code 422\n    at createError (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\adapters\\http.js:269:11)\n    at IncomingMessage.emit (node:events:526:35)\n    at endReadableNT (node:internal/streams/readable:1408:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)"
+  },
+  {
+    "type": "Error",
+    "date": "2025-02-28 / 06:04",
+    "errorLocation": "function.js:88:21",
+    "errorMessage": "Request failed with status code 400",
+    "error": "Request failed with status code 400\nError: Request failed with status code 400\n    at createError (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\adapters\\http.js:269:11)\n    at IncomingMessage.emit (node:events:526:35)\n    at endReadableNT (node:internal/streams/readable:1408:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)"
+  },
+  {
+    "type": "Error",
+    "date": "2025-02-28 / 06:06",
+    "errorLocation": "function.js:88:21",
+    "errorMessage": "Request failed with status code 400",
+    "error": "Request failed with status code 400\nError: Request failed with status code 400\n    at createError (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\adapters\\http.js:269:11)\n    at IncomingMessage.emit (node:events:526:35)\n    at endReadableNT (node:internal/streams/readable:1408:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)"
+  },
+  {
+    "type": "Error",
+    "date": "2025-02-28 / 06:07",
+    "errorLocation": "function.js:88:21",
+    "errorMessage": "Request failed with status code 400",
+    "error": "Request failed with status code 400\nError: Request failed with status code 400\n    at createError (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\adapters\\http.js:269:11)\n    at IncomingMessage.emit (node:events:526:35)\n    at endReadableNT (node:internal/streams/readable:1408:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)"
+  },
+  {
+    "type": "Error",
+    "date": "2025-02-28 / 06:08",
+    "errorLocation": "function.js:88:21",
+    "errorMessage": "Request failed with status code 400",
+    "error": "Request failed with status code 400\nError: Request failed with status code 400\n    at createError (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\adapters\\http.js:269:11)\n    at IncomingMessage.emit (node:events:526:35)\n    at endReadableNT (node:internal/streams/readable:1408:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)"
+  },
+  {
+    "type": "Error",
+    "date": "2025-02-28 / 06:11",
+    "errorLocation": "function.js:88:21",
+    "errorMessage": "Request failed with status code 400",
+    "error": "Request failed with status code 400\nError: Request failed with status code 400\n    at createError (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\adapters\\http.js:269:11)\n    at IncomingMessage.emit (node:events:526:35)\n    at endReadableNT (node:internal/streams/readable:1408:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)"
+  },
+  {
+    "type": "Error",
+    "date": "2025-02-28 / 06:13",
+    "errorLocation": "function.js:88:21",
+    "errorMessage": "Cannot read properties of undefined (reading 'push')",
+    "error": "Cannot read properties of undefined (reading 'push')\nTypeError: Cannot read properties of undefined (reading 'push')\n    at deepseekTraining (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\service\\PerfectWorldService.js:247:21)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\controller\\PerfectWorldController.js:8:66\n    at D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:86:19\n    at Object.pw (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\listeners\\commandHandler.js:18:59)\n    at Client.<anonymous> (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\listeners\\commandHandler.js:47:64)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+  },
+  {
+    "type": "Error",
+    "date": "2025-02-28 / 06:13",
+    "errorLocation": "function.js:88:21",
+    "errorMessage": "Request failed with status code 400",
+    "error": "Request failed with status code 400\nError: Request failed with status code 400\n    at createError (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\adapters\\http.js:269:11)\n    at IncomingMessage.emit (node:events:526:35)\n    at endReadableNT (node:internal/streams/readable:1408:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)"
+  },
+  {
+    "type": "Error",
+    "date": "2025-02-28 / 06:13",
+    "errorLocation": "function.js:88:21",
+    "errorMessage": "Request failed with status code 422",
+    "error": "Request failed with status code 422\nError: Request failed with status code 422\n    at createError (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\adapters\\http.js:269:11)\n    at IncomingMessage.emit (node:events:526:35)\n    at endReadableNT (node:internal/streams/readable:1408:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)"
+  },
+  {
+    "type": "Error",
+    "date": "2025-02-28 / 06:13",
+    "errorLocation": "function.js:88:21",
+    "errorMessage": "Request failed with status code 422",
+    "error": "Request failed with status code 422\nError: Request failed with status code 422\n    at createError (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\adapters\\http.js:269:11)\n    at IncomingMessage.emit (node:events:526:35)\n    at endReadableNT (node:internal/streams/readable:1408:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)"
+  },
+  {
+    "type": "Error",
+    "date": "2025-02-28 / 06:18",
+    "errorLocation": "function.js:88:21",
+    "errorMessage": "Request failed with status code 404",
+    "error": "Request failed with status code 404\nError: Request failed with status code 404\n    at createError (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\adapters\\http.js:269:11)\n    at IncomingMessage.emit (node:events:526:35)\n    at endReadableNT (node:internal/streams/readable:1408:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)"
+  },
+  {
+    "type": "Error",
+    "date": "2025-02-28 / 06:19",
+    "errorLocation": "function.js:88:21",
+    "errorMessage": "Request failed with status code 404",
+    "error": "Request failed with status code 404\nError: Request failed with status code 404\n    at createError (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\adapters\\http.js:269:11)\n    at IncomingMessage.emit (node:events:526:35)\n    at endReadableNT (node:internal/streams/readable:1408:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)"
+  },
+  {
+    "type": "Error",
+    "date": "2025-02-28 / 06:20",
+    "errorLocation": "function.js:88:21",
+    "errorMessage": "Request failed with status code 404",
+    "error": "Request failed with status code 404\nError: Request failed with status code 404\n    at createError (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\adapters\\http.js:269:11)\n    at IncomingMessage.emit (node:events:526:35)\n    at endReadableNT (node:internal/streams/readable:1408:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)"
+  },
+  {
+    "type": "Error",
+    "date": "2025-02-28 / 06:20",
+    "errorLocation": "function.js:88:21",
+    "errorMessage": "Cannot read properties of undefined (reading 'unshift')",
+    "error": "Cannot read properties of undefined (reading 'unshift')\nTypeError: Cannot read properties of undefined (reading 'unshift')\n    at deepseekTraining (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\service\\PerfectWorldService.js:245:21)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\controller\\PerfectWorldController.js:8:66\n    at D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:86:19\n    at Object.pw (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\listeners\\commandHandler.js:18:59)\n    at Client.<anonymous> (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\listeners\\commandHandler.js:47:64)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+  },
+  {
+    "type": "Error",
+    "date": "2025-02-28 / 06:20",
+    "errorLocation": "function.js:88:21",
+    "errorMessage": "Request failed with status code 404",
+    "error": "Request failed with status code 404\nError: Request failed with status code 404\n    at createError (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\adapters\\http.js:269:11)\n    at IncomingMessage.emit (node:events:526:35)\n    at endReadableNT (node:internal/streams/readable:1408:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)"
+  },
+  {
+    "type": "Error",
+    "date": "2025-03-01 / 04:57",
+    "errorLocation": "function.js:88:21",
+    "errorMessage": "readJSONFileSync is not defined",
+    "error": "readJSONFileSync is not defined\nReferenceError: readJSONFileSync is not defined\n    at D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\controller\\BtthController.js:12:18\n    at D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:86:19\n    at Object.btth (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\listeners\\commandHandler.js:17:61)\n    at Client.<anonymous> (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\listeners\\commandHandler.js:47:64)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+  },
+  {
+    "type": "Error",
+    "date": "2025-03-01 / 04:58",
+    "errorLocation": "function.js:88:21",
+    "errorMessage": "dir_history_chat is not defined",
+    "error": "dir_history_chat is not defined\nReferenceError: dir_history_chat is not defined\n    at deepseek (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\deepseek.js:28:26)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\controller\\BtthController.js:14:28\n    at D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:86:19\n    at Object.btth (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\listeners\\commandHandler.js:17:61)\n    at Client.<anonymous> (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\listeners\\commandHandler.js:47:64)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+  },
+  {
+    "type": "Error",
+    "date": "2025-03-01 / 05:01",
+    "errorLocation": "function.js:88:21",
+    "errorMessage": "Request failed with status code 422",
+    "error": "Request failed with status code 422\nError: Request failed with status code 422\n    at createError (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\adapters\\http.js:269:11)\n    at IncomingMessage.emit (node:events:526:35)\n    at endReadableNT (node:internal/streams/readable:1408:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)"
+  },
+  {
+    "type": "Error",
+    "date": "2025-03-01 / 05:01",
+    "errorLocation": "function.js:88:21",
+    "errorMessage": "Request failed with status code 422",
+    "error": "Request failed with status code 422\nError: Request failed with status code 422\n    at createError (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\adapters\\http.js:269:11)\n    at IncomingMessage.emit (node:events:526:35)\n    at endReadableNT (node:internal/streams/readable:1408:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)"
+  },
+  {
+    "type": "Error",
+    "date": "2025-03-01 / 05:01",
+    "errorLocation": "function.js:88:21",
+    "errorMessage": "Request failed with status code 422",
+    "error": "Request failed with status code 422\nError: Request failed with status code 422\n    at createError (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\adapters\\http.js:269:11)\n    at IncomingMessage.emit (node:events:526:35)\n    at endReadableNT (node:internal/streams/readable:1408:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)"
+  },
+  {
+    "type": "Error",
+    "date": "2025-03-01 / 05:20",
+    "errorLocation": "function.js:88:21",
+    "errorMessage": "Request failed with status code 404",
+    "error": "Request failed with status code 404\nError: Request failed with status code 404\n    at createError (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\adapters\\http.js:269:11)\n    at IncomingMessage.emit (node:events:526:35)\n    at endReadableNT (node:internal/streams/readable:1408:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)"
+  },
+  {
+    "type": "Error",
+    "date": "2025-03-01 / 05:26",
+    "errorLocation": "function.js:88:21",
+    "errorMessage": "aborted",
+    "error": "aborted\nError: aborted\n    at connResetException (node:internal/errors:721:14)\n    at TLSSocket.socketCloseListener (node:_http_client:455:19)\n    at TLSSocket.emit (node:events:526:35)\n    at node:net:337:12\n    at TCP.done (node:_tls_wrap:657:7)"
+  },
+  {
+    "type": "Error",
+    "date": "2025-03-01 / 05:28",
+    "errorLocation": "function.js:88:21",
+    "errorMessage": "Request failed with status code 422",
+    "error": "Request failed with status code 422\nError: Request failed with status code 422\n    at createError (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\adapters\\http.js:269:11)\n    at IncomingMessage.emit (node:events:526:35)\n    at endReadableNT (node:internal/streams/readable:1408:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)"
+  },
+  {
+    "type": "Error",
+    "date": "2025-03-01 / 05:29",
+    "errorLocation": "function.js:88:21",
+    "errorMessage": "deepseekTraining is not a function",
+    "error": "deepseekTraining is not a function\nTypeError: deepseekTraining is not a function\n    at D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\controller\\PerfectWorldController.js:8:66\n    at D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:86:19\n    at Object.pw (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\listeners\\commandHandler.js:18:59)\n    at Client.<anonymous> (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\listeners\\commandHandler.js:47:64)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+  },
+  {
+    "type": "Error",
+    "date": "2025-03-01 / 05:31",
+    "errorLocation": "function.js:88:21",
+    "errorMessage": "Request failed with status code 422",
+    "error": "Request failed with status code 422\nError: Request failed with status code 422\n    at createError (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\adapters\\http.js:269:11)\n    at IncomingMessage.emit (node:events:526:35)\n    at endReadableNT (node:internal/streams/readable:1408:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)"
+  },
+  {
+    "type": "Error",
+    "date": "2025-03-01 / 05:34",
+    "errorLocation": "function.js:88:21",
+    "errorMessage": "Request failed with status code 422",
+    "error": "Request failed with status code 422\nError: Request failed with status code 422\n    at createError (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\adapters\\http.js:269:11)\n    at IncomingMessage.emit (node:events:526:35)\n    at endReadableNT (node:internal/streams/readable:1408:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)"
+  },
+  {
+    "type": "Error",
+    "date": "2025-03-01 / 05:34",
+    "errorLocation": "function.js:88:21",
+    "errorMessage": "Request failed with status code 422",
+    "error": "Request failed with status code 422\nError: Request failed with status code 422\n    at createError (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\adapters\\http.js:269:11)\n    at IncomingMessage.emit (node:events:526:35)\n    at endReadableNT (node:internal/streams/readable:1408:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)"
+  },
+  {
+    "type": "Error",
+    "date": "2025-03-01 / 05:35",
+    "errorLocation": "function.js:88:21",
+    "errorMessage": "Request failed with status code 422",
+    "error": "Request failed with status code 422\nError: Request failed with status code 422\n    at createError (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\adapters\\http.js:269:11)\n    at IncomingMessage.emit (node:events:526:35)\n    at endReadableNT (node:internal/streams/readable:1408:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)"
+  },
+  {
+    "type": "Error",
+    "date": "2025-03-01 / 05:39",
+    "errorLocation": "function.js:88:21",
+    "errorMessage": "Request failed with status code 422",
+    "error": "Request failed with status code 422\nError: Request failed with status code 422\n    at createError (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\adapters\\http.js:269:11)\n    at IncomingMessage.emit (node:events:526:35)\n    at endReadableNT (node:internal/streams/readable:1408:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)"
+  },
+  {
+    "type": "Error",
+    "date": "2025-03-01 / 05:42",
+    "errorLocation": "function.js:88:21",
+    "errorMessage": "Request failed with status code 422",
+    "error": "Request failed with status code 422\nError: Request failed with status code 422\n    at createError (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\adapters\\http.js:269:11)\n    at IncomingMessage.emit (node:events:526:35)\n    at endReadableNT (node:internal/streams/readable:1408:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)"
+  },
+  {
+    "type": "Error",
+    "date": "2025-03-01 / 05:45",
+    "errorLocation": "function.js:88:21",
+    "errorMessage": "Request failed with status code 422",
+    "error": "Request failed with status code 422\nError: Request failed with status code 422\n    at createError (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\adapters\\http.js:269:11)\n    at IncomingMessage.emit (node:events:526:35)\n    at endReadableNT (node:internal/streams/readable:1408:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)"
+  },
+  {
+    "type": "Error",
+    "date": "2025-03-01 / 06:37",
+    "errorLocation": "function.js:88:21",
+    "errorMessage": "response is not defined",
+    "error": "response is not defined\nReferenceError: response is not defined\n    at deepseekTraining (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\deepseek.js:123:55)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\controller\\BtthController.js:13:58\n    at D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:86:19\n    at Object.btth (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\listeners\\commandHandler.js:17:61)\n    at Client.<anonymous> (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\listeners\\commandHandler.js:47:64)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
   }
 ]

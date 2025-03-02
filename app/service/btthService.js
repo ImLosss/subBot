@@ -29,10 +29,13 @@ async function eden(prompt) {
     let totReq = 0;
     let totCost = 0;
     let repeatReq = 0;
-    let line = 1;
     for(let i = 0; i < prompts.length; i++) {
         let chatHistory = [];
         let prompt = prompts[i];
+
+        let line = prompt.split('\n')[0]
+
+        if(!Number(line)) return 'format tidak valid';
 
         console.log(i, 'index');
             
@@ -43,7 +46,19 @@ async function eden(prompt) {
         chatHistory = chatHistory.concat(tempChatHistory);
         const response = await reqEden(config, chatHistory, prompt, config.GLOBAL_CHAT_BTTH)
 
-        if(!response.status) return response.message;
+        if(!response.status) {
+            // if(i > 0) return 
+            // return response.message;
+            i--
+            repeatReq+=1;
+            console.log(prompt, 'prompt')
+            console.log(response.message, 'response');
+            console.log('repeat');
+
+            if(repeatReq > 5) if(i > 0) return str;
+            else return 'cancelled';
+            continue;
+        }
 
         totCost+=response.cost;
         totReq+=1;
@@ -54,10 +69,11 @@ async function eden(prompt) {
             console.log(prompt, 'prompt')
             console.log(response.message, 'response');
             console.log('repeat');
+
+            if(repeatReq > 5) if(i > 0) return str;
+            else return 'cancelled';
             continue;
         }
-
-        line+=50;
 
         tempChatHistory.push({role: "user", message: prompt});
         tempChatHistory.push({role: "assistant", message: response.message});
