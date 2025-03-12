@@ -1,7 +1,7 @@
 require('module-alias/register');
 const console = require('console');
 const axios = require('axios');
-const { cutVal, reqEdenMulti, reqEden } = require('function/function');
+const { cutVal, reqEdenMulti, reqEden, readJSONFileSync, writeJSONFileSync } = require('function/function');
 const fs = require('fs')
 
 async function globalUpdate(arg, chat) {
@@ -12,7 +12,7 @@ async function globalUpdate(arg, chat) {
 
     config.GLOBAL_CHAT_SEEU = arg;
 
-    fs.writeFileSync('./config.json', JSON.stringify(config, null, 2));
+    writeJSONFileSync('./config.json', config);
 
     return await chat.sendMessage("Data berhasil di update");
 }
@@ -67,7 +67,7 @@ async function eden(prompt, media) {
 
         if(chatHistory.length > 20) chatHistory.splice(0, 2);
 
-        fs.writeFileSync(dir_history_chat, JSON.stringify(chatHistory));
+        writeJSONFileSync(dir_history_chat, chatHistory);
 
         return response.message;
     }

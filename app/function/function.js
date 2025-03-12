@@ -95,15 +95,6 @@ async function reqEdenMulti(config, globalChat, prompt, media) {
     for (const apikey of config["EDEN_APIKEY_2"]) {
         const url = 'https://api.edenai.run/v2/multimodal/chat';
 
-        // Path ke file gambar
-        const imagePath = './doc.pdf';
-
-        // Membaca file gambar secara sinkron
-        const imageBuffer = fs.readFileSync(imagePath);
-
-        // Konversi buffer ke Base64
-        const base64Image = imageBuffer.toString('base64');
-
         const headers = {
             'accept': 'application/json',
             'authorization': `Bearer ${apikey}`,
@@ -126,7 +117,7 @@ async function reqEdenMulti(config, globalChat, prompt, media) {
                         {
                             type: "text",
                             content: {
-                                text: prompt
+                                text: "jika terdapat teks pada gambar tulis kembali, jika tidak ada maka deskripsikan, jika keduanya maka deskripsikan dan tulis kembali teknya"
                             }
                         },
                         {

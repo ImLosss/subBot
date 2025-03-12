@@ -84,7 +84,6 @@ async function deepseek(prompt, dirChat, globalChat) {
 }
 
 async function deepseekTraining(prompt, dirChat, globalChat) {
-
     prompt = cutVal(prompt, 1);
 
     let config = readJSONFileSync(`./config.json`)
@@ -175,15 +174,14 @@ async function reqDeepseek(chatHistory, model) {
     } catch (err) {
         error = err.message;
         console.log(error);
+
+        await new Promise(resolve => setTimeout(resolve, 500)); // Delay for 1 second
+
+        return {
+            status: false,
+            message: error
+        };
     }
-
-    // Optional: Add a delay between requests to avoid rate limiting
-    await new Promise(resolve => setTimeout(resolve, 500)); // Delay for 1 second
-
-    return {
-        status: false,
-        message: error
-    }; // Return false if no valid API key is found
 }
 
 async function reqDeepseekTraining(config, chatHistory, model) {
@@ -200,14 +198,14 @@ async function reqDeepseekTraining(config, chatHistory, model) {
     const data = {
         messages: chatHistory,
         model: model,
-        frequency_penalty: 0.5,
+        frequency_penalty: 0,
         max_tokens: 8192,
-        presence_penalty: 0.5,
+        presence_penalty: 0,
         response_format: { type: 'text' },
         stop: null,
         stream: false,
         stream_options: null,
-        temperature: 1.3,
+        temperature: 1,
         tools: null,
         tool_choice: 'none',
     };
@@ -217,7 +215,6 @@ async function reqDeepseekTraining(config, chatHistory, model) {
     
     try {
         const response_message = response.data.choices[0].message;
-        console.log(response_message);
         let cost_input_miss_cny = (response.data.usage.prompt_cache_miss_tokens / 1000000) * 2;
         let cost_input_hit_cny = (response.data.usage.prompt_cache_hit_tokens / 1000000) * 0.5;
         let cost_output_cny = (response.data.usage.completion_tokens / 1000000) * 8;
@@ -233,15 +230,13 @@ async function reqDeepseekTraining(config, chatHistory, model) {
     } catch (err) {
         error = err.message;
         console.log(error);
+
+        return {
+            status: false,
+            message: error
+        }; // Return false if no valid API key is found
     }
 
-    // Optional: Add a delay between requests to avoid rate limiting
-    await new Promise(resolve => setTimeout(resolve, 500)); // Delay for 1 second
-
-    return {
-        status: false,
-        message: error
-    }; // Return false if no valid API key is found
 }
 
 module.exports = {

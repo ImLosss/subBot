@@ -1,62 +1,6 @@
 [
   {
     "type": "Error",
-    "date": "2025-01-17 / 04:23",
-    "errorLocation": "function.js:74:21",
-    "errorMessage": "chatHistoryUpdate is not defined",
-    "error": "chatHistoryUpdate is not defined\nReferenceError: chatHistoryUpdate is not defined\n    at eden (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\service\\SeeuService.js:66:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\controller\\SeeuController.js:19:22\n    at async D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:72:13"
-  },
-  {
-    "type": "Error",
-    "date": "2025-01-18 / 18:57",
-    "errorLocation": "function.js:74:21",
-    "errorMessage": "ENOENT: no such file or directory, open 'D:\\Dokumenku\\Pemrograman\\Node\\subbot\\doc.pdf'",
-    "error": "ENOENT: no such file or directory, open 'D:\\Dokumenku\\Pemrograman\\Node\\subbot\\doc.pdf'\nError: ENOENT: no such file or directory, open 'D:\\Dokumenku\\Pemrograman\\Node\\subbot\\doc.pdf'\n    at Object.open (node:internal/fs/sync:78:18)\n    at Object.openSync (node:fs:565:17)\n    at Object.readFileSync (node:fs:445:35)\n    at reqEdenMulti (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:88:32)\n    at eden (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\service\\SeeuService.js:53:36)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\controller\\SeeuController.js:21:28\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:72:13"
-  },
-  {
-    "type": "Error",
-    "date": "2025-01-18 / 18:57",
-    "errorLocation": "function.js:74:21",
-    "errorMessage": "ENOENT: no such file or directory, open 'D:\\Dokumenku\\Pemrograman\\Node\\subbot\\doc.pdf'",
-    "error": "ENOENT: no such file or directory, open 'D:\\Dokumenku\\Pemrograman\\Node\\subbot\\doc.pdf'\nError: ENOENT: no such file or directory, open 'D:\\Dokumenku\\Pemrograman\\Node\\subbot\\doc.pdf'\n    at Object.open (node:internal/fs/sync:78:18)\n    at Object.openSync (node:fs:565:17)\n    at Object.readFileSync (node:fs:445:35)\n    at reqEdenMulti (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:88:32)\n    at eden (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\service\\SeeuService.js:53:36)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\controller\\SeeuController.js:21:28\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:72:13"
-  },
-  {
-    "type": "Error",
-    "date": "2025-01-18 / 18:57",
-    "errorLocation": "function.js:74:21",
-    "errorMessage": "ENOENT: no such file or directory, open 'D:\\Dokumenku\\Pemrograman\\Node\\subbot\\doc.pdf'",
-    "error": "ENOENT: no such file or directory, open 'D:\\Dokumenku\\Pemrograman\\Node\\subbot\\doc.pdf'\nError: ENOENT: no such file or directory, open 'D:\\Dokumenku\\Pemrograman\\Node\\subbot\\doc.pdf'\n    at Object.open (node:internal/fs/sync:78:18)\n    at Object.openSync (node:fs:565:17)\n    at Object.readFileSync (node:fs:445:35)\n    at reqEdenMulti (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:88:32)\n    at eden (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\service\\SeeuService.js:53:36)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\controller\\SeeuController.js:21:28\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:72:13"
-  },
-  {
-    "type": "Error",
-    "date": "2025-01-18 / 18:58",
-    "errorLocation": "function.js:74:21",
-    "errorMessage": "ENOENT: no such file or directory, open 'D:\\Dokumenku\\Pemrograman\\Node\\subbot\\doc.pdf'",
-    "error": "ENOENT: no such file or directory, open 'D:\\Dokumenku\\Pemrograman\\Node\\subbot\\doc.pdf'\nError: ENOENT: no such file or directory, open 'D:\\Dokumenku\\Pemrograman\\Node\\subbot\\doc.pdf'\n    at Object.open (node:internal/fs/sync:78:18)\n    at Object.openSync (node:fs:565:17)\n    at Object.readFileSync (node:fs:445:35)\n    at reqEdenMulti (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:88:32)\n    at eden (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\service\\SeeuService.js:53:36)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\controller\\SeeuController.js:21:28\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:72:13"
-  },
-  {
-    "type": "Error",
-    "date": "2025-01-18 / 18:58",
-    "errorLocation": "function.js:74:21",
-    "errorMessage": "ENOENT: no such file or directory, open 'D:\\Dokumenku\\Pemrograman\\Node\\subbot\\doc.pdf'",
-    "error": "ENOENT: no such file or directory, open 'D:\\Dokumenku\\Pemrograman\\Node\\subbot\\doc.pdf'\nError: ENOENT: no such file or directory, open 'D:\\Dokumenku\\Pemrograman\\Node\\subbot\\doc.pdf'\n    at Object.open (node:internal/fs/sync:78:18)\n    at Object.openSync (node:fs:565:17)\n    at Object.readFileSync (node:fs:445:35)\n    at reqEdenMulti (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:88:32)\n    at eden (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\service\\SeeuService.js:53:36)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\controller\\SeeuController.js:21:28\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:72:13"
-  },
-  {
-    "type": "Error",
-    "date": "2025-01-18 / 18:58",
-    "errorLocation": "function.js:74:21",
-    "errorMessage": "ENOENT: no such file or directory, open 'D:\\Dokumenku\\Pemrograman\\Node\\subbot\\doc.pdf'",
-    "error": "ENOENT: no such file or directory, open 'D:\\Dokumenku\\Pemrograman\\Node\\subbot\\doc.pdf'\nError: ENOENT: no such file or directory, open 'D:\\Dokumenku\\Pemrograman\\Node\\subbot\\doc.pdf'\n    at Object.open (node:internal/fs/sync:78:18)\n    at Object.openSync (node:fs:565:17)\n    at Object.readFileSync (node:fs:445:35)\n    at reqEdenMulti (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:88:32)\n    at eden (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\service\\SeeuService.js:53:36)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\controller\\SeeuController.js:21:28\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:72:13"
-  },
-  {
-    "type": "Error",
-    "date": "2025-01-26 / 12:02",
-    "errorLocation": "function.js:74:21",
-    "errorMessage": "splitSrt is not defined",
-    "error": "splitSrt is not defined\nReferenceError: splitSrt is not defined\n    at eden (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\service\\renegadeImmortalService.js:20:21)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\controller\\RenegadeImmortalController.js:11:28\n    at D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:72:19\n    at Object.ri (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\listeners\\commandHandler.js:16:59)\n    at Client.<anonymous> (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\listeners\\commandHandler.js:47:64)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
-  },
-  {
-    "type": "Error",
     "date": "2025-01-26 / 14:09",
     "errorLocation": "function.js:74:21",
     "errorMessage": "chat is not defined",
@@ -348,5 +292,61 @@
     "errorLocation": "function.js:88:21",
     "errorMessage": "response is not defined",
     "error": "response is not defined\nReferenceError: response is not defined\n    at deepseekTraining (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\deepseek.js:123:55)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\controller\\BtthController.js:13:58\n    at D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:86:19\n    at Object.btth (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\listeners\\commandHandler.js:17:61)\n    at Client.<anonymous> (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\listeners\\commandHandler.js:47:64)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+  },
+  {
+    "type": "Error",
+    "date": "2025-03-02 / 18:47",
+    "errorLocation": "function.js:88:21",
+    "errorMessage": "Request failed with status code 422",
+    "error": "Request failed with status code 422\nError: Request failed with status code 422\n    at createError (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\adapters\\http.js:269:11)\n    at IncomingMessage.emit (node:events:526:35)\n    at endReadableNT (node:internal/streams/readable:1408:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)"
+  },
+  {
+    "type": "Error",
+    "date": "2025-03-06 / 19:10",
+    "errorLocation": "function.js:88:21",
+    "errorMessage": "readJSONFileSync is not defined",
+    "error": "readJSONFileSync is not defined\nReferenceError: readJSONFileSync is not defined\n    at D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\controller\\PerfectWorldController.js:8:18\n    at D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:86:19\n    at Object.pw (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\listeners\\commandHandler.js:18:59)\n    at Client.<anonymous> (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\listeners\\commandHandler.js:47:64)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+  },
+  {
+    "type": "Error",
+    "date": "2025-03-09 / 18:45",
+    "errorLocation": "function.js:88:21",
+    "errorMessage": "read ECONNRESET",
+    "error": "read ECONNRESET\nError: read ECONNRESET\n    at TLSWrap.onStreamRead (node:internal/stream_base_commons:217:20)"
+  },
+  {
+    "type": "Error",
+    "date": "2025-03-10 / 16:12",
+    "errorLocation": "function.js:88:21",
+    "errorMessage": "globalUpdate is not a function",
+    "error": "globalUpdate is not a function\nTypeError: globalUpdate is not a function\n    at D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\controller\\MergedSubController.js:11:47\n    at D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:86:19\n    at Object.ms (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\listeners\\commandHandler.js:19:59)\n    at Client.<anonymous> (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\listeners\\commandHandler.js:47:64)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+  },
+  {
+    "type": "Error",
+    "date": "2025-03-10 / 16:13",
+    "errorLocation": "function.js:88:21",
+    "errorMessage": "Request failed with status code 400",
+    "error": "Request failed with status code 400\nError: Request failed with status code 400\n    at createError (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\adapters\\http.js:269:11)\n    at IncomingMessage.emit (node:events:526:35)\n    at endReadableNT (node:internal/streams/readable:1408:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)"
+  },
+  {
+    "type": "Error",
+    "date": "2025-03-10 / 16:14",
+    "errorLocation": "function.js:88:21",
+    "errorMessage": "Request failed with status code 400",
+    "error": "Request failed with status code 400\nError: Request failed with status code 400\n    at createError (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\adapters\\http.js:269:11)\n    at IncomingMessage.emit (node:events:526:35)\n    at endReadableNT (node:internal/streams/readable:1408:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)"
+  },
+  {
+    "type": "Error",
+    "date": "2025-03-10 / 16:15",
+    "errorLocation": "function.js:88:21",
+    "errorMessage": "Request failed with status code 422",
+    "error": "Request failed with status code 422\nError: Request failed with status code 422\n    at createError (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\adapters\\http.js:269:11)\n    at IncomingMessage.emit (node:events:526:35)\n    at endReadableNT (node:internal/streams/readable:1408:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)"
+  },
+  {
+    "type": "Error",
+    "date": "2025-03-12 / 23:12",
+    "errorLocation": "function.js:88:21",
+    "errorMessage": "Cannot read properties of undefined (reading 'status')",
+    "error": "Cannot read properties of undefined (reading 'status')\nTypeError: Cannot read properties of undefined (reading 'status')\n    at eden (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\service\\SeeuService.js:55:26)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)\n    at async D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\controller\\SeeuController.js:21:22\n    at async D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:86:13"
   }
 ]
