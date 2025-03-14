@@ -3,6 +3,7 @@ const axios = require('axios');
 const fs = require('fs');
 const console = require('console');
 const { cutVal, splitSrt, readJSONFileSync, writeJSONFileSync } = require('function/function');
+const { generateTrainingData } = require('function/getTrainingData');
 
 async function deepseekOld(prompt, dirChat, globalChat) {
     const prompts = splitSrt(prompt);
@@ -96,6 +97,7 @@ async function deepseek(prompt, dirChat, globalChat) {
     let repeatReq = 0;
     for(let i = 0; i < prompts.length; i++) {
         let prompt = prompts[i];
+        let config = readJSONFileSync(`./config.json`)
 
         let line = prompt.split('\n')[0].trim();
 
@@ -104,15 +106,13 @@ async function deepseek(prompt, dirChat, globalChat) {
         console.log(i, 'index');
             
         let chatHistory = [];
-        
-        if(fs.existsSync(dirChat)) {
-            chatHistory = readJSONFileSync(dirChat)
-        }
-
         chatHistory.unshift({role: "system", content: globalChat});
+        chatHistory.push({ role: "tool", content: "response_test" })
 
         chatHistory = chatHistory.concat(tempChatHistory);
         chatHistory.push({role: "user", content: prompt});
+        console.log(chatHistory);
+
         const response = await reqDeepseek(chatHistory, 'deepseek-chat')
 
         if(!response.status) {

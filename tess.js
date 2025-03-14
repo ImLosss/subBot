@@ -48,6 +48,7 @@ async function reqDeepseek(chatHistory, model) {
     };
 
     const response = await axios.post(url, data, { headers });
+    console.log(response.data);
     if(response.data == '') return { status: false, message: error };
     
     try {
@@ -75,7 +76,28 @@ async function reqDeepseek(chatHistory, model) {
     }
 }
 
-reqDeepseek([{ role: 'user', content: "How's the weather in Hangzhou?" }], 'deepseek-chat')
+reqDeepseek([
+    { role: 'user', content: "How's the weather in Hangzhou?" },
+    {
+      role: 'assistant',
+      content: '',
+      tool_calls: [
+        {
+          id: 'call_0_06b042f3-4aeb-4d32-a6f9-a72e38d2fe4a',
+          function: {
+            name: 'get_weather',
+            arguments: JSON.stringify({ location: 'Hangzhou' })
+          },
+          type: 'function'
+        }
+      ]
+    },
+    {
+      role: 'tool',
+      tool_call_id: 'call_0_06b042f3-4aeb-4d32-a6f9-a72e38d2fe4a',
+      content: '24℃'
+    }
+  ], 'deepseek-chat')
 .then((result) => {
-    console.log(result.message.tool_calls);
+    console.log(result.message);
 })
