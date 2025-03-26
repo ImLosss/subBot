@@ -101,17 +101,24 @@ async function deepseek(prompt, dirChat, globalChat) {
 
         let line = prompt.split('\n')[0].trim();
 
-        if(!Number(line)) return 'format tidak valid';
+        // if(!Number(line)) return 'format tidak valid';
 
         console.log(i, 'index');
             
         let chatHistory = [];
         chatHistory.unshift({role: "system", content: globalChat});
-        chatHistory.push({ role: "tool", content: "response_test" })
-
-        chatHistory = chatHistory.concat(tempChatHistory);
         chatHistory.push({role: "user", content: prompt});
-        console.log(chatHistory);
+        chatHistory.push({ role: 'assistant', content: '', tool_calls: [
+            {
+              id: 'call_0_06b042f3-4aeb-4d32-a6f9-a72e38d2fe4a',
+              function: {
+                name: 'get_training_data',
+                arguments: JSON.stringify({ donghua: 'swallowed_star' })
+              },
+              type: 'function'
+            }
+          ] })
+        chatHistory.push({ role: "tool", tool_call_id: 'call_0_06b042f3-4aeb-4d32-a6f9-a72e38d2fe4a', content: JSON.stringify(generateTrainingData(dirChat)) })
 
         const response = await reqDeepseek(chatHistory, 'deepseek-chat')
 

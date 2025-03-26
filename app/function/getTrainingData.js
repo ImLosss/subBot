@@ -64,8 +64,7 @@ function getSRTFilesFromFolder(folderPath) {
 
 function generateTrainingData(folderPath, important) {
     return {
-        training_data: getSRTFilesFromFolder(folderPath),
-        important: important
+        training_data: getSRTFilesFromFolder(folderPath)
     };
 }
 
