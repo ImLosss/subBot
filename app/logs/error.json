@@ -1,20 +1,6 @@
 [
   {
     "type": "Error",
-    "date": "2025-02-28 / 05:07",
-    "errorLocation": "function.js:74:21",
-    "errorMessage": "consolele is not defined",
-    "error": "consolele is not defined\nReferenceError: consolele is not defined\n    at reqDeepseekTraining (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:273:5)\n    at deepseekTraining (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\service\\PerfectWorldService.js:247:32)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\controller\\PerfectWorldController.js:8:66\n    at D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:72:19\n    at Object.pw (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\listeners\\commandHandler.js:18:59)\n    at Client.<anonymous> (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\listeners\\commandHandler.js:47:64)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
-  },
-  {
-    "type": "Error",
-    "date": "2025-02-28 / 05:10",
-    "errorLocation": "function.js:74:21",
-    "errorMessage": "chat is not defined",
-    "error": "chat is not defined\nReferenceError: chat is not defined\n    at deepseekTraining (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\service\\PerfectWorldService.js:249:30)\n    at async D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\controller\\PerfectWorldController.js:8:60\n    at async D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:72:13"
-  },
-  {
-    "type": "Error",
     "date": "2025-02-28 / 05:11",
     "errorLocation": "function.js:74:21",
     "errorMessage": "chat is not defined",
@@ -348,5 +334,19 @@
     "errorLocation": "function.js:88:21",
     "errorMessage": "Request failed with status code 422",
     "error": "Request failed with status code 422\nError: Request failed with status code 422\n    at createError (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\createError.js:16:15)\n    at settle (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\core\\settle.js:17:12)\n    at IncomingMessage.handleStreamEnd (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\node_modules\\axios\\lib\\adapters\\http.js:269:11)\n    at IncomingMessage.emit (node:events:526:35)\n    at endReadableNT (node:internal/streams/readable:1408:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)"
+  },
+  {
+    "type": "Error",
+    "date": "2025-03-27 / 01:07",
+    "errorLocation": "function.js:88:21",
+    "errorMessage": "ENOTDIR: not a directory, scandir 'database/data_chat/data_chat_btth'",
+    "error": "ENOTDIR: not a directory, scandir 'database/data_chat/data_chat_btth'\nError: ENOTDIR: not a directory, scandir 'database/data_chat/data_chat_btth'\n    at Object.readdirSync (node:fs:1513:3)\n    at getSRTFilesFromFolder (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\getTrainingData.js:53:8)\n    at generateTrainingData (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\getTrainingData.js:67:24)\n    at deepseek (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\deepseek.js:121:127)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\controller\\BtthController.js:14:27\n    at D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:86:19\n    at Object.btth (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\listeners\\commandHandler.js:18:61)\n    at Client.<anonymous> (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\listeners\\commandHandler.js:49:64)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+  },
+  {
+    "type": "Error",
+    "date": "2025-03-27 / 01:07",
+    "errorLocation": "function.js:88:21",
+    "errorMessage": "ENOTDIR: not a directory, scandir 'database/data_chat/data_chat_btth'",
+    "error": "ENOTDIR: not a directory, scandir 'database/data_chat/data_chat_btth'\nError: ENOTDIR: not a directory, scandir 'database/data_chat/data_chat_btth'\n    at Object.readdirSync (node:fs:1513:3)\n    at getSRTFilesFromFolder (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\getTrainingData.js:53:8)\n    at generateTrainingData (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\getTrainingData.js:67:24)\n    at deepseek (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\deepseek.js:121:127)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\controller\\BtthController.js:14:27\n    at D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:86:19\n    at Object.btth (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\listeners\\commandHandler.js:18:61)\n    at Client.<anonymous> (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\listeners\\commandHandler.js:49:64)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
   }
 ]
