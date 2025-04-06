@@ -4,7 +4,7 @@ const fs = require('fs');
 const console = require('console');
 const { cutVal, splitSrt, readJSONFileSync, writeJSONFileSync } = require('function/function');
 
-async function deepseek(prompt, dirChat, globalChat) {
+async function deepseek(prompt, dirChat, globalChat, chat) {
     const prompts = splitSrt(prompt);
 
     console.log(prompts.length, 'Prompts length after split');
@@ -71,6 +71,7 @@ async function deepseek(prompt, dirChat, globalChat) {
 
         if(tempChatHistory.length > 4) tempChatHistory.splice(0, 2);
 
+        if(i < prompts.length) chat.sendMessage(`${ i + 1 }/${ prompts.length }\n\n${ response.message }`);
         str+=`${ response.message }\n\n`;
 
         await new Promise(resolve => setTimeout(resolve, 1000)); // Delay for 1 second

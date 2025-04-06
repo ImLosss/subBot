@@ -11,7 +11,7 @@ const pw = withErrorHandling(async (msg, arg, chat) => {
     if(!arg) return await chat.sendMessage('Command salah/kurang');
     if(arg.startsWith('updateglobal')) return globalUpdate(arg, chat);
     else if(arg.startsWith('training')) response = await deepseekTraining(arg, 'database/data_chat/data_chat_pw', config.GLOBAL_CHAT_TRAINING);
-    else response = await deepseek(arg, 'database/data_chat/data_chat_pw', config.GLOBAL_CHAT_PW);
+    else response = await deepseek(arg, 'database/data_chat/data_chat_pw', config.GLOBAL_CHAT_PW, chat);
     
     await chat.sendMessage(response);
 })
