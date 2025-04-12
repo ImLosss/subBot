@@ -1,27 +1,6 @@
 [
   {
     "type": "Error",
-    "date": "2025-02-28 / 05:07",
-    "errorLocation": "function.js:74:21",
-    "errorMessage": "consolele is not defined",
-    "error": "consolele is not defined\nReferenceError: consolele is not defined\n    at reqDeepseekTraining (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:273:5)\n    at deepseekTraining (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\service\\PerfectWorldService.js:247:32)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\controller\\PerfectWorldController.js:8:66\n    at D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:72:19\n    at Object.pw (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\listeners\\commandHandler.js:18:59)\n    at Client.<anonymous> (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\listeners\\commandHandler.js:47:64)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
-  },
-  {
-    "type": "Error",
-    "date": "2025-02-28 / 05:10",
-    "errorLocation": "function.js:74:21",
-    "errorMessage": "chat is not defined",
-    "error": "chat is not defined\nReferenceError: chat is not defined\n    at deepseekTraining (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\service\\PerfectWorldService.js:249:30)\n    at async D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\controller\\PerfectWorldController.js:8:60\n    at async D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:72:13"
-  },
-  {
-    "type": "Error",
-    "date": "2025-02-28 / 05:11",
-    "errorLocation": "function.js:74:21",
-    "errorMessage": "chat is not defined",
-    "error": "chat is not defined\nReferenceError: chat is not defined\n    at deepseekTraining (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\service\\PerfectWorldService.js:249:30)\n    at async D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\controller\\PerfectWorldController.js:8:60\n    at async D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:72:13"
-  },
-  {
-    "type": "Error",
     "date": "2025-02-28 / 05:21",
     "errorLocation": "function.js:74:21",
     "errorMessage": "Request failed with status code 422",
@@ -348,5 +327,26 @@
     "errorLocation": "function.js:88:21",
     "errorMessage": "read ECONNRESET",
     "error": "read ECONNRESET\nError: read ECONNRESET\n    at TLSWrap.onStreamRead (node:internal/stream_base_commons:217:20)"
+  },
+  {
+    "type": "Error",
+    "date": "2025-04-10 / 17:57",
+    "errorLocation": "function.js:88:21",
+    "errorMessage": "aborted",
+    "error": "aborted\nError: aborted\n    at connResetException (node:internal/errors:721:14)\n    at TLSSocket.socketCloseListener (node:_http_client:455:19)\n    at TLSSocket.emit (node:events:526:35)\n    at node:net:337:12\n    at TCP.done (node:_tls_wrap:657:7)"
+  },
+  {
+    "type": "Error",
+    "date": "2025-04-10 / 17:57",
+    "errorLocation": "function.js:88:21",
+    "errorMessage": "aborted",
+    "error": "aborted\nError: aborted\n    at connResetException (node:internal/errors:721:14)\n    at TLSSocket.socketCloseListener (node:_http_client:455:19)\n    at TLSSocket.emit (node:events:526:35)\n    at node:net:337:12\n    at TCP.done (node:_tls_wrap:657:7)"
+  },
+  {
+    "type": "Error",
+    "date": "2025-04-10 / 17:59",
+    "errorLocation": "function.js:88:21",
+    "errorMessage": "aborted",
+    "error": "aborted\nError: aborted\n    at connResetException (node:internal/errors:721:14)\n    at TLSSocket.socketCloseListener (node:_http_client:455:19)\n    at TLSSocket.emit (node:events:526:35)\n    at node:net:337:12\n    at TCP.done (node:_tls_wrap:657:7)"
   }
 ]

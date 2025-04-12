@@ -22,6 +22,8 @@ async function deepseek(prompt, dirChat, globalChat, chat) {
 
         if(!Number(line)) return 'format tidak valid';
 
+        if(i == 0) prompt = `Selalu gunakan tanda baca saat menerjemahkan tiap kalimat (!, ?, titik, koma)\n\n${ prompt }`;
+
         console.log(i, 'index');
             
         let chatHistory = [];
@@ -44,6 +46,7 @@ async function deepseek(prompt, dirChat, globalChat, chat) {
             // console.log(chatHistory, 'chatHistory');
             // console.log(response.message, 'response');
             console.log('repeat');
+            chat.sendMessage(`Gagal: ${ response.message }`);
 
             if(repeatReq > 5) if(str != "") return str;
             else return 'cancelled';
@@ -60,6 +63,7 @@ async function deepseek(prompt, dirChat, globalChat, chat) {
             // console.log(chatHistory, 'chatHistory');
             // console.log(response.message, 'response');
             console.log('repeat');
+            chat.sendMessage(`Gagal: ${ response.message }`);
 
             if(repeatReq > 5) if(str != "") return str;
             else return 'cancelled';
@@ -71,7 +75,7 @@ async function deepseek(prompt, dirChat, globalChat, chat) {
 
         if(tempChatHistory.length > 4) tempChatHistory.splice(0, 2);
 
-        if(i < prompts.length) chat.sendMessage(`${ i + 1 }/${ prompts.length }\n\n${ response.message }`);
+        if(i < prompts.length - 1) chat.sendMessage(`${ i + 1 }/${ prompts.length }\n\n${ response.message }`);
         str+=`${ response.message }\n\n`;
 
         await new Promise(resolve => setTimeout(resolve, 1000)); // Delay for 1 second
@@ -155,12 +159,12 @@ async function reqDeepseek(chatHistory, model) {
         tools: null,
         tool_choice: 'none',
     };
-
-    const response = await axios.post(url, data, { headers });
-    console.log(response.data);
-    if(response.data == '') return { status: false, message: error };
     
     try {
+        const response = await axios.post(url, data, { headers, timeout: 300000 });
+        console.log(response.data);
+        if(response.data == '') return { status: false, message: error };
+        
         const response_message = response.data.choices[0].message.content;
         let cost_input_miss_cny = (response.data.usage.prompt_cache_miss_tokens / 1000000) * 2;
         let cost_input_hit_cny = (response.data.usage.prompt_cache_hit_tokens / 1000000) * 0.5;
@@ -174,7 +178,6 @@ async function reqDeepseek(chatHistory, model) {
         } 
     } catch (err) {
         error = err.message;
-        console.log(error);
 
         await new Promise(resolve => setTimeout(resolve, 500)); // Delay for 1 second
 
