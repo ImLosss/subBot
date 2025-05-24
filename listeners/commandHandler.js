@@ -9,6 +9,7 @@ const { wdqk } = require('controller/WdqkController');
 const { seeu } = require('controller/SeeuController');
 const { ss } = require('controller/SwallowedController');
 const { cutVal } = require("function/function");
+const { img } = require('controller/ImageController');
 
 module.exports = (function() {
     return function(bot) {
@@ -21,6 +22,7 @@ module.exports = (function() {
                 'wdqk': (msg, sender, client, arg, chat) => wdqk(msg, arg, chat),
                 // 'seeu': (msg, sender, client, arg, chat) => seeu(msg, arg, chat),
                 'ss': (msg, sender, client, arg, chat) => ss(msg, arg, chat),
+                'img': (msg, sender, client, arg, chat) => img(msg, arg, chat),
             };    
             
             const prefix = ['/', '!'];
