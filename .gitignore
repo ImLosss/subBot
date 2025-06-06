@@ -1,5 +1,5 @@
 node_modules
-config.json
+config*
 .wwebjs_auth
 .wwebjs_cache
 qrcode.png
