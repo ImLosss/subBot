@@ -28,10 +28,8 @@ async function deepseek(prompt, dirChat, dirDataset, globalChat) {
         let chatHistory = [];
         chatHistory.unshift({role: "system", content: globalChat});
         chatHistory.push({role: "user", content: `Gunakan dataaset berikut sebagai refrensi dalam menerjemahkan srt yang dikirimkan:\n\n${ JSON.stringify(readJSONFileSync(dirDataset)) }`});
-        chatHistory.push(tempChatHistory);
-        chatHistory.push({role: "user", content: prompt});
-
-        return console.log(chatHistory, 'chatHistory');
+        chatHistory.concat(tempChatHistory);
+        chatHistory.push({role: "user", content: `[Total Req: ${i+1}/${prompts.length}]\n[50 lines/Req]\n\nTerjemahkan, dan selalu gunakan tanda baca di tiap kalimat:\n${prompt}`});
 
         const response = await reqDeepseek(chatHistory, 'deepseek-chat')
 
@@ -53,15 +51,15 @@ async function deepseek(prompt, dirChat, dirDataset, globalChat) {
         totToken+= response.total_tokens;
         totReq+=1;
 
-        if(!response.message.startsWith(line)){
-            i--
-            repeatReq+=1;
-            console.log('repeat');
+        // if(!response.message.startsWith(line)){
+        //     i--
+        //     repeatReq+=1;
+        //     console.log('repeat');
 
-            if(repeatReq > 5) if(str != "") return str;
-            else return 'cancelled';
-            continue;
-        }
+        //     if(repeatReq > 5) if(str != "") return str;
+        //     else return 'cancelled';
+        //     continue;
+        // }
 
         tempChatHistory.push({role: "user", content: prompt});
         tempChatHistory.push({role: "assistant", content: response.message});

@@ -9,6 +9,7 @@
     { "mandarin": "斗皇", "replace": "Dou Huang" },
     { "mandarin": "斗宗", "replace": "Dou Zong" },
     { "mandarin": "斗尊", "replace": "Dou Zun" },
+    { "mandarin": "半圣", "replace": "Ban Sheng" },
     { "mandarin": "斗圣", "replace": "Dou Sheng" },
     { "mandarin": "斗帝", "replace": "Dou Di" }
   ],
@@ -138,6 +139,8 @@
     { "mandarin": "湮天印", "indonesia": "Sky Burying Seal", "detail": "nama teknik" },
     { "mandarin": "愧仙", "indonesia": "Boneka Dou Zun", "detail": "istilah/nama benda" },
     { "mandarin": "噬石魔蚁", "indonesia": "Semut Pemakan Batu", "detail": "nama monster" },
-    { "mandarin": "噬石蚁后", "indonesia": "Ratu Semut Pemakan Batu", "detail": "nama monster" }
+    { "mandarin": "噬石蚁后", "indonesia": "Ratu Semut Pemakan Batu", "detail": "nama monster" },
+    { "mandarin": "阵法", "indonesia": "Formasi...", "detail": "istilah/teknik" },
+    { "mandarin": "宗", "indonesia": "Sekte", "detail": "istilah" }
   ]
 }
