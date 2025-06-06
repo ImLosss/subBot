@@ -5,7 +5,7 @@ const console = require('console');
 const { cutVal, splitSrt, readJSONFileSync, writeJSONFileSync } = require('function/function');
 const { generateTrainingData } = require('function/getTrainingData');
 
-async function deepseek(prompt, dirChat, globalChat) {
+async function deepseek(prompt, dirChat, dirDataset, globalChat) {
     const prompts = splitSrt(prompt);
 
     console.log(prompts.length, 'Prompts length after split');
@@ -18,7 +18,6 @@ async function deepseek(prompt, dirChat, globalChat) {
     let repeatReq = 0;
     for(let i = 0; i < prompts.length; i++) {
         let prompt = prompts[i];
-        let config = readJSONFileSync(`./config.json`)
 
         let line = prompt.split('\n')[0].trim();
 
@@ -28,18 +27,11 @@ async function deepseek(prompt, dirChat, globalChat) {
             
         let chatHistory = [];
         chatHistory.unshift({role: "system", content: globalChat});
+        chatHistory.push({role: "user", content: `Gunakan dataaset berikut sebagai refrensi dalam menerjemahkan srt yang dikirimkan:\n\n${ JSON.stringify(readJSONFileSync(dirDataset)) }`});
+        chatHistory.push(tempChatHistory);
         chatHistory.push({role: "user", content: prompt});
-        chatHistory.push({ role: 'assistant', content: '', tool_calls: [
-            {
-              id: 'call_0_06b042f3-4aeb-4d32-a6f9-a72e38d2fe4a',
-              function: {
-                name: 'get_training_data',
-                arguments: JSON.stringify({ donghua: 'swallowed_star' })
-              },
-              type: 'function'
-            }
-          ] })
-        chatHistory.push({ role: "tool", tool_call_id: 'call_0_06b042f3-4aeb-4d32-a6f9-a72e38d2fe4a', content: JSON.stringify(generateTrainingData(dirChat)) })
+
+        return console.log(chatHistory, 'chatHistory');
 
         const response = await reqDeepseek(chatHistory, 'deepseek-chat')
 

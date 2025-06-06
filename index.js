@@ -1,9 +1,5 @@
 require('module-alias/register');
-const qr = require('qrcode');
-const qrcode = require('qrcode-terminal');
-const fs = require('fs');
-const {Client, LocalAuth, Buttons, MessageMedia } = require('whatsapp-web.js');
-const console = require('console');
+const {Client, LocalAuth } = require('whatsapp-web.js');
 
 const bot = new Client({
     authStrategy: new LocalAuth(), // your authstrategy here
