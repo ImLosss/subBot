@@ -75,7 +75,6 @@
     { "mandarin": "丹界", "translate_to": "Dunia Pil", "detail": "nama tempat/ujian" },
     { "mandarin": "天才地宝", "translate_to": "harta dan bahan langka", "detail": "istilah" },
     { "mandarin": "药材", "translate_to": "bahan obat", "detail": "istilah/bahan" },
-    { "mandarin": "玄冥宗", "translate_to": "Sekte Xuanming", "detail": "nama sekte/kelompok" },
     { "mandarin": "辰闲", "translate_to": "Chen Xian", "detail": "nama karakter" },
     { "mandarin": "凶兽", "translate_to": "monster", "detail": "istilah/makhluk" },
     { "mandarin": "少宗主", "translate_to": "Tuan Muda", "detail": "jabatan" },
@@ -141,6 +140,20 @@
     { "mandarin": "噬石魔蚁", "translate_to": "Semut Pemakan Batu", "detail": "nama monster" },
     { "mandarin": "噬石蚁后", "translate_to": "Ratu Semut Pemakan Batu", "detail": "nama monster" },
     { "mandarin": "阵法", "translate_to": "Formasi...", "detail": "istilah/teknik" },
-    { "mandarin": "宗", "translate_to": "Sekte", "detail": "istilah" }
+    { "mandarin": "宗", "translate_to": "Sekte", "detail": "istilah" },
+    {"mandarin": "花宗", "translate_to": "Sekte Bunga", "detail": "nama sekte/kelompok" },
+    { "mandarin": "玄冥宗", "translate_to": "Sekte Xuanming", "detail": "nama sekte/kelompok" },
+    { "mandarin": "族", "translate_to": "Klan", "detail": "istilah" },
+    { "mandarin": "魂族", "translate_to": "Klan Hun", "detail": "nama klan" },
+    { "mandarin": "古族", "translate_to": "Klan Gu", "detail": "nama klan" },
+    { "mandarin": "药族", "translate_to": "Klan Yao", "detail": "nama klan" },
+    { "mandarin": "炎族", "translate_to": "Klan Yan", "detail": "nama klan" },
+    { "mandarin": "石族", "translate_to": "Klan Shi", "detail": "nama klan" },
+    { "mandarin": "灵族", "translate_to": "Klan Ling", "detail": "nama klan" },
+    { "mandarin": "雷族", "translate_to": "Klan Lei", "detail": "nama klan" },
+    { "mandarin": "萧族", "translate_to": "Klan Xiao", "detail": "nama klan" },
+    { "mandarin": "大长老", "translate_to": "Tetua Agung", "detail": "jabatan" },
+    {"mandarin": "妖花邪君", "translate_to": "Yaohua Liangjun", "detail": "nama karakter" }
+    
   ]
 }

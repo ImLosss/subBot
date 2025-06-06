@@ -1,13 +1,6 @@
 [
   {
     "type": "Error",
-    "date": "2025-02-28 / 05:11",
-    "errorLocation": "function.js:74:21",
-    "errorMessage": "chat is not defined",
-    "error": "chat is not defined\nReferenceError: chat is not defined\n    at deepseekTraining (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\service\\PerfectWorldService.js:249:30)\n    at async D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\controller\\PerfectWorldController.js:8:60\n    at async D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:72:13"
-  },
-  {
-    "type": "Error",
     "date": "2025-02-28 / 05:21",
     "errorLocation": "function.js:74:21",
     "errorMessage": "Request failed with status code 422",
@@ -348,5 +341,12 @@
     "errorLocation": "function.js:88:21",
     "errorMessage": "ENOTDIR: not a directory, scandir 'database/data_chat/data_chat_btth'",
     "error": "ENOTDIR: not a directory, scandir 'database/data_chat/data_chat_btth'\nError: ENOTDIR: not a directory, scandir 'database/data_chat/data_chat_btth'\n    at Object.readdirSync (node:fs:1513:3)\n    at getSRTFilesFromFolder (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\getTrainingData.js:53:8)\n    at generateTrainingData (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\getTrainingData.js:67:24)\n    at deepseek (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\deepseek.js:121:127)\n    at D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\controller\\BtthController.js:14:27\n    at D:\\Dokumenku\\Pemrograman\\Node\\subbot\\app\\function\\function.js:86:19\n    at Object.btth (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\listeners\\commandHandler.js:18:61)\n    at Client.<anonymous> (D:\\Dokumenku\\Pemrograman\\Node\\subbot\\listeners\\commandHandler.js:49:64)\n    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)"
+  },
+  {
+    "type": "Error",
+    "date": "2025-06-07 / 00:41",
+    "errorLocation": "function.js:88:21",
+    "errorMessage": "chat is not defined",
+    "error": "chat is not defined\nReferenceError: chat is not defined\n    at deepseek (D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\function\\deepseek.js:72:9)\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)\n    at async D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\controller\\BtthController.js:14:21\n    at async D:\\Dokumenku\\Pemrograman\\Node\\subBot\\app\\function\\function.js:86:13"
   }
 ]

@@ -5,7 +5,7 @@ const console = require('console');
 const { cutVal, splitSrt, readJSONFileSync, writeJSONFileSync } = require('function/function');
 const { generateTrainingData } = require('function/getTrainingData');
 
-async function deepseek(prompt, dirChat, dirDataset, globalChat) {
+async function deepseek(prompt, dirChat, dirDataset, globalChat, chat) {
     const prompts = splitSrt(prompt);
 
     console.log(prompts.length, 'Prompts length after split');
@@ -28,10 +28,10 @@ async function deepseek(prompt, dirChat, dirDataset, globalChat) {
         let chatHistory = [];
         chatHistory.unshift({role: "system", content: globalChat});
         chatHistory.push({role: "user", content: `Gunakan dataaset berikut sebagai refrensi dalam menerjemahkan srt yang dikirimkan:\n\n${ JSON.stringify(readJSONFileSync(dirDataset)) }`});
-        chatHistory.concat(tempChatHistory);
-        chatHistory.push({role: "user", content: `[Total Req: ${i+1}/${prompts.length}]\n[50 lines/Req]\n\nTerjemahkan, dan selalu gunakan tanda baca di tiap kalimat:\n${prompt}`});
+        chatHistory.push(...tempChatHistory);
+        chatHistory.push({role: "user", content: `Terjemahkan tanpa tambahan komentar apapun, dan selalu gunakan tanda baca di tiap kalimat:\n${prompt}`});
 
-        console.log(chatHistory);
+        // console.log(chatHistory);
 
         const response = await reqDeepseek(chatHistory, 'deepseek-chat')
 
@@ -68,7 +68,7 @@ async function deepseek(prompt, dirChat, dirDataset, globalChat) {
 
         if(tempChatHistory.length > 6) tempChatHistory.splice(0, 2);
 
-
+        chat.sendMessage(`[Total Req: ${i+1}/${prompts.length}]\n[max 50 lines/Req]\n\n${response.message}`);
 
         str+=`${ response.message }\n\n`;
 
@@ -155,7 +155,7 @@ async function reqDeepseek(chatHistory, model) {
     };
 
     const response = await axios.post(url, data, { headers });
-    console.log(response.data);
+    // console.log(response.data);
     if(response.data == '') return { status: false, message: error };
     
     try {
