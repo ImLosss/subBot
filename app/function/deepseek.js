@@ -31,6 +31,8 @@ async function deepseek(prompt, dirChat, dirDataset, globalChat) {
         chatHistory.concat(tempChatHistory);
         chatHistory.push({role: "user", content: `[Total Req: ${i+1}/${prompts.length}]\n[50 lines/Req]\n\nTerjemahkan, dan selalu gunakan tanda baca di tiap kalimat:\n${prompt}`});
 
+        console.log(chatHistory);
+
         const response = await reqDeepseek(chatHistory, 'deepseek-chat')
 
         if(!response.status) {
@@ -64,7 +66,9 @@ async function deepseek(prompt, dirChat, dirDataset, globalChat) {
         tempChatHistory.push({role: "user", content: prompt});
         tempChatHistory.push({role: "assistant", content: response.message});
 
-        if(tempChatHistory.length > 4) tempChatHistory.splice(0, 2);
+        if(tempChatHistory.length > 6) tempChatHistory.splice(0, 2);
+
+
 
         str+=`${ response.message }\n\n`;
 
