@@ -21,7 +21,6 @@ module.exports = (function() {
                 'wdqk': (msg, sender, client, arg, chat) => wdqk(msg, arg, chat),
                 // 'seeu': (msg, sender, client, arg, chat) => seeu(msg, arg, chat),
                 'ss': (msg, sender, client, arg, chat) => ss(msg, arg, chat),
-                'tes': (msg, sender, client, arg, chat) => btth(msg, arg, chat),
             };    
             
             const prefix = ['/', '!'];
