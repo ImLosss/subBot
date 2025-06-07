@@ -34,8 +34,6 @@ async function deepseek(prompt, dirChat, dirDataset, globalChat, chat) {
         chatHistory.push(...tempChatHistory);
         chatHistory.push({role: "user", content: `Terjemahkan tanpa tambahan komentar apapun, dan selalu gunakan tanda baca di tiap kalimat:\n${prompt}`});
 
-        // console.log(chatHistory);
-
         const response = await reqDeepseek(chatHistory, 'deepseek-chat')
 
         if(!response.status) {
