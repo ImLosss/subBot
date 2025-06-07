@@ -3,7 +3,7 @@ const axios = require('axios');
 const fs = require('fs');
 const console = require('console');
 const { cutVal, splitSrt, readJSONFileSync, writeJSONFileSync } = require('function/function');
-const { generateTrainingData } = require('function/getTrainingData');
+const { getSRTFilesFromFolder } = require('function/getTrainingData');
 
 async function deepseek(prompt, dirChat, dirDataset, globalChat, chat) {
     const prompts = splitSrt(prompt);
@@ -24,10 +24,13 @@ async function deepseek(prompt, dirChat, dirDataset, globalChat, chat) {
         // if(!Number(line)) return 'format tidak valid';
 
         console.log(i, 'index');
-            
+
+        let trainingData = readJSONFileSync(dirDataset);
+        trainingData.LEARN_THIS = getSRTFilesFromFolder(dirChat);
+
         let chatHistory = [];
         chatHistory.unshift({role: "system", content: globalChat});
-        chatHistory.push({role: "user", content: `Gunakan dataaset berikut sebagai refrensi dalam menerjemahkan srt yang dikirimkan:\n\n${ JSON.stringify(readJSONFileSync(dirDataset)) }`});
+        chatHistory.push({role: "system", content: `Gunakan dan pelajari dataset berikut sebagai refrensi dalam menerjemahkan srt yang dikirimkan:\n\n${ JSON.stringify(trainingData) }`});
         chatHistory.push(...tempChatHistory);
         chatHistory.push({role: "user", content: `Terjemahkan tanpa tambahan komentar apapun, dan selalu gunakan tanda baca di tiap kalimat:\n${prompt}`});
 
@@ -149,7 +152,7 @@ async function reqDeepseek(chatHistory, model) {
         stop: null,
         stream: false,
         stream_options: null,
-        temperature: 1,
+        temperature: 1.3,
         tools: null,
         tool_choice: 'none',
     };

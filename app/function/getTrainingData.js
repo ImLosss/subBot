@@ -62,12 +62,6 @@ function getSRTFilesFromFolder(folderPath) {
     return trainingData;
 }
 
-function generateTrainingData(folderPath, important) {
-    return {
-        training_data: getSRTFilesFromFolder(folderPath)
-    };
-}
-
 module.exports = {
-    generateTrainingData
+    getSRTFilesFromFolder
 }

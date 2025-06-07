@@ -38,7 +38,7 @@
     { "mandarin": "万兽灵火", "replace": "Ten Thousand Beast Flame" },
     { "mandarin": "玄黄炎", "replace": "Xuan Yellow Flame" }
   ],
-  "LEARN_THIS": [
+  "REPLACE_THIS": [
     { "mandarin": "叶家", "translate_to": "Keluarga Ye", "detail": "nama keluarga/klan" },
     { "mandarin": "考核", "translate_to": "Ujian", "detail": "istilah" },
     { "mandarin": "五大家族", "translate_to": "lima keluarga besar", "detail": "istilah/nama kelompok" },
@@ -154,6 +154,10 @@
     { "mandarin": "萧族", "translate_to": "Klan Xiao", "detail": "nama klan" },
     { "mandarin": "大长老", "translate_to": "Tetua Agung", "detail": "jabatan" },
     {"mandarin": "妖花邪君", "translate_to": "Yaohua Liangjun", "detail": "nama karakter" },
-    {"mandarin": "天墓", "translate_to": "Makam Langit", "detail": "nama tempat" }
+    {"mandarin": "天墓", "translate_to": "Makam Langit", "detail": "nama tempat" },
+    { "mandarin": "毁灭火莲", "translate_to": "Api Teratai Pemusnah", "detail": "nama teknik" },
+    { "mandarin": "天阶功法", "translate_to": "Teknik Tingkat Langit", "detail": "istilah/tingkatan" },
+    { "mandarin": "焚诀", "translate_to": "Teknik Pembakaran", "detail": "nama teknik" },
+    { "mandarin": "三长老", "translate_to": "Tetua Ketiga", "detail": "jabatan" }
   ]
 }
