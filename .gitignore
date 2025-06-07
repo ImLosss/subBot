@@ -3,3 +3,5 @@ config*
 .wwebjs_auth
 .wwebjs_cache
 qrcode.png
+app/logs/error.json
+app/logs/log.json

@@ -153,7 +153,7 @@
     { "mandarin": "雷族", "translate_to": "Klan Lei", "detail": "nama klan" },
     { "mandarin": "萧族", "translate_to": "Klan Xiao", "detail": "nama klan" },
     { "mandarin": "大长老", "translate_to": "Tetua Agung", "detail": "jabatan" },
-    {"mandarin": "妖花邪君", "translate_to": "Yaohua Liangjun", "detail": "nama karakter" }
-    
+    {"mandarin": "妖花邪君", "translate_to": "Yaohua Liangjun", "detail": "nama karakter" },
+    {"mandarin": "天墓", "translate_to": "Makam Langit", "detail": "nama tempat" }
   ]
 }
