@@ -8,6 +8,7 @@ const { ms } = require('controller/MergedSubController');
 const { wdqk } = require('controller/WdqkController');
 const { seeu } = require('controller/SeeuController');
 const { ss } = require('controller/SwallowedController');
+const { img } = require('controller/ImageController');
 const { cutVal } = require("function/function");
 
 module.exports = (function() {

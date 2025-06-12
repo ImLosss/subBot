@@ -100,6 +100,7 @@
         { "mandarin": "魔洲", "translate_to": "Pulau Iblis", "detail": "nama tempat" },
         { "mandarin": "柳神", "translate_to": "Dewi Willow", "detail": "nama karakter" },
         { "mandarin": "不朽者", "translate_to": "Tuan Immortal", "detail": "istilah/julukan" },
-        { "mandarin": "无量天", "translate_to": "Langit Tanpa Batas", "detail": "nama tempat" }
+        { "mandarin": "无量天", "translate_to": "Langit Tanpa Batas", "detail": "nama tempat" },
+        { "mandarin": "长老", "translate_to": "Tetua", "detail": "jabatan" }
     ]
 }
