@@ -1,0 +1,6 @@
+{
+  "LIST_CULTIVATION": ["Mortal Realm", "Earthly Realm", "Heavenly Realm", "Divine Realm", "Immortal Realm", "Sage Realm", "Saint Realm", "God Realm"],
+  "REPLACE_THIS": [
+    { "mandarin": "乾巫宇宙国", "translate_to": "Kerajaan Alam Semesta Qianwu", "detail": "nama wilayah" }
+  ]
+}
