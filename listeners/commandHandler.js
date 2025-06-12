@@ -22,6 +22,7 @@ module.exports = (function() {
                 // 'seeu': (msg, sender, client, arg, chat) => seeu(msg, arg, chat),
                 'ss': (msg, sender, client, arg, chat) => ss(msg, arg, chat),
                 'tes': (msg, sender, client, arg, chat) => btth(msg, arg, chat),
+                'img': (msg, sender, client, arg, chat) => img(msg, arg, chat)
             };    
             
             const prefix = ['/', '!'];
