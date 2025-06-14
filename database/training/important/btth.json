@@ -163,6 +163,8 @@
     { "mandarin": "银", "translate_to": "Perak", "detail": "tingkatan" },
     { "mandarin": "金", "translate_to": "Emas", "detail": "tingkatan" },
     { "mandarin": "紫金", "translate_to": "Ungu-emas", "detail": "tingkatan" },
-    { "mandarin": "彩金", "translate_to": "Emas-pelangi", "detail": "istilah" }
+    { "mandarin": "彩金", "translate_to": "Emas-pelangi", "detail": "istilah" },
+    { "mandarin": "古帝玉托瑟", "translate_to": "Giok Kaisar Kuno Tuose", "detail": "istilah" },
+    { "mandarin": "邙天尺", "translate_to": "Mang Tian Chi", "detail": "nama karakter" }
   ]
 }
