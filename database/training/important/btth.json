@@ -111,7 +111,6 @@
     { "mandarin": "闭守天灵", "translate_to": "Penutupan Spiritual Langit", "detail": "istilah/teknik" },
     { "mandarin": "纳灵锻魂", "translate_to": "Penempaan Jiwa", "detail": "istilah/teknik" },
     { "mandarin": "师叔", "translate_to": "paman seperguruan", "detail": "istilah/hubungan" },
-    { "mandarin": "血脉", "translate_to": "garis keturunan", "detail": "istilah" },
     { "mandarin": "药尘", "translate_to": "Yao Chen", "detail": "nama karakter" },
     { "mandarin": "独门功法", "translate_to": "teknik rahasia", "detail": "istilah/teknik" },
     { "mandarin": "升灵", "translate_to": "meningkatkan jiwa", "detail": "istilah/aksi" },
@@ -141,7 +140,7 @@
     { "mandarin": "噬石蚁后", "translate_to": "Ratu Semut Pemakan Batu", "detail": "nama monster" },
     { "mandarin": "阵法", "translate_to": "Formasi...", "detail": "istilah/teknik" },
     { "mandarin": "宗", "translate_to": "Sekte", "detail": "istilah" },
-    {"mandarin": "花宗", "translate_to": "Sekte Bunga", "detail": "nama sekte/kelompok" },
+    { "mandarin": "花宗", "translate_to": "Sekte Bunga", "detail": "nama sekte/kelompok" },
     { "mandarin": "玄冥宗", "translate_to": "Sekte Xuanming", "detail": "nama sekte/kelompok" },
     { "mandarin": "族", "translate_to": "Klan", "detail": "istilah" },
     { "mandarin": "魂族", "translate_to": "Klan Hun", "detail": "nama klan" },
@@ -153,11 +152,17 @@
     { "mandarin": "雷族", "translate_to": "Klan Lei", "detail": "nama klan" },
     { "mandarin": "萧族", "translate_to": "Klan Xiao", "detail": "nama klan" },
     { "mandarin": "大长老", "translate_to": "Tetua Agung", "detail": "jabatan" },
-    {"mandarin": "妖花邪君", "translate_to": "Yaohua Liangjun", "detail": "nama karakter" },
-    {"mandarin": "天墓", "translate_to": "Makam Langit", "detail": "nama tempat" },
+    { "mandarin": "妖花邪君", "translate_to": "Yaohua Liangjun", "detail": "nama karakter" },
+    { "mandarin": "天墓", "translate_to": "Makam Langit", "detail": "nama tempat" },
     { "mandarin": "毁灭火莲", "translate_to": "Api Teratai Pemusnah", "detail": "nama teknik" },
     { "mandarin": "天阶功法", "translate_to": "Teknik Tingkat Langit", "detail": "istilah/tingkatan" },
     { "mandarin": "焚诀", "translate_to": "Teknik Pembakaran", "detail": "nama teknik" },
-    { "mandarin": "三长老", "translate_to": "Tetua Ketiga", "detail": "jabatan" }
+    { "mandarin": "三长老", "translate_to": "Tetua Ketiga", "detail": "jabatan" },
+    { "mandarin": "院长", "translate_to": "Kepsek", "detail": "jabatan" },
+    { "mandarin": "血脉", "translate_to": "Garis Darah", "detail": "istilah" },
+    { "mandarin": "银", "translate_to": "Perak", "detail": "tingkatan" },
+    { "mandarin": "金", "translate_to": "Emas", "detail": "tingkatan" },
+    { "mandarin": "紫金", "translate_to": "Ungu-emas", "detail": "tingkatan" },
+    { "mandarin": "彩金", "translate_to": "Emas-pelangi", "detail": "istilah" }
   ]
 }
