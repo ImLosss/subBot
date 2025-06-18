@@ -67,7 +67,7 @@ async function deepseek(prompt, dirChat, dirDataset, globalChat, chat) {
         tempChatHistory.push({role: "user", content: prompt});
         tempChatHistory.push({role: "assistant", content: response.message});
 
-        if(tempChatHistory.length > 6) tempChatHistory.splice(0, 2);
+        if(tempChatHistory.length > 4) tempChatHistory.splice(0, 2);
 
         chat.sendMessage(`[Total Req: ${i+1}/${prompts.length}]\n[max 50 lines/Req]\n\n${response.message}`);
 
