@@ -101,6 +101,9 @@
         { "mandarin": "柳神", "translate_to": "Dewi Willow", "detail": "nama karakter" },
         { "mandarin": "不朽者", "translate_to": "Tuan Immortal", "detail": "istilah/julukan" },
         { "mandarin": "无量天", "translate_to": "Langit Tanpa Batas", "detail": "nama tempat" },
-        { "mandarin": "长老", "translate_to": "Tetua", "detail": "jabatan" }
+        { "mandarin": "长老", "translate_to": "Tetua", "detail": "jabatan" },
+        { "mandarin": "万灵图", "translate_to": "Peta 10.000 Roh", "detail": "istilah/benda" },
+        { "mandarin": "大道之花", "translate_to": "Bunga Great Dao", "detail": "istilah/benda" },
+        { "mandarin": "风族", "translate_to": "Klan Feng", "detail": "nama Klan" }
     ]
 }

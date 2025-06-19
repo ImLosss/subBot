@@ -102,6 +102,12 @@
     { "mandarin": "罹难", "translate_to": "Dalam bencana", "detail": "istilah terkena musibah" },
     { "mandarin": "山雨欲来", "translate_to": "Mara bahaya akan datang", "detail": "idiom/puisi" },
     { "mandarin": "乘风而起", "translate_to": "Bangkit mengarungi badai", "detail": "idiom/puisi" },
-    { "mandarin": "噬血珠", "translate_to": "Mutiara Penghisap Darah", "detail": "istilah" }
+    { "mandarin": "噬血珠", "translate_to": "Mutiara Penghisap Darah", "detail": "istilah" },
+    { "mandarin": "长老", "translate_to": "Tetua", "detail": "jabatan" },
+    { "mandarin": "真人", "translate_to": "Ketua", "detail": "jabatan" },
+    { "mandarin": "老七", "translate_to": "Murid Ketujuh", "detail": "istilah" },
+    { "mandarin": "大竹峰一脉", "translate_to": "aliran Puncak Dazhu", "detail": "istilah" },
+    { "mandarin": "小竹峰", "translate_to": "Puncak Xiaozhu", "detail": "nama tempat" },
+    { "mandarin": "不易", "translate_to": "Buyi", "detail": "nama karakter" }
   ]
 }

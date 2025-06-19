@@ -8,6 +8,7 @@ const { ms } = require('controller/MergedSubController');
 const { wdqk } = require('controller/WdqkController');
 const { seeu } = require('controller/SeeuController');
 const { ss } = require('controller/SwallowedController');
+const { jd } = require('controller/JadeDynastyController');
 const { img } = require('controller/ImageController');
 const { cutVal } = require("function/function");
 
@@ -23,7 +24,8 @@ module.exports = (function() {
                 // 'seeu': (msg, sender, client, arg, chat) => seeu(msg, arg, chat),
                 'ss': (msg, sender, client, arg, chat) => ss(msg, arg, chat),
                 'tes': (msg, sender, client, arg, chat) => btth(msg, arg, chat),
-                'img': (msg, sender, client, arg, chat) => img(msg, arg, chat)
+                'jd': (msg, sender, client, arg, chat) => jd(msg, arg, chat),
+                'img': (msg, sender, client, arg, chat) => img(msg, arg, chat),
             };    
             
             const prefix = ['/', '!'];
