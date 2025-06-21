@@ -165,6 +165,8 @@
     { "mandarin": "紫金", "translate_to": "Ungu-emas", "detail": "tingkatan" },
     { "mandarin": "彩金", "translate_to": "Emas-pelangi", "detail": "istilah" },
     { "mandarin": "古帝玉托瑟", "translate_to": "Giok Kaisar Kuno Tuose", "detail": "istilah" },
-    { "mandarin": "邙天尺", "translate_to": "Mang Tian Chi", "detail": "nama karakter" }
+    { "mandarin": "邙天尺", "translate_to": "Mang Tian Chi", "detail": "nama karakter" },
+    { "mandarin": "能量体", "translate_to": "tubuh energi", "detail": "istilah" },
+    { "mandarin": "能量核", "translate_to": "inti energi", "detail": "istilah" }
   ]
 }
