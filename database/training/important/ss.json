@@ -71,6 +71,7 @@
     { "mandarin": "虚拟宇宙公司", "translate_to": "Perusahaan Alam Semesta Virtual", "detail": "nama organisasi" },
     { "mandarin": "银河系", "translate_to": "Galaksi Bima Sakti", "detail": "nama wilayah" },
     { "mandarin": "火焰法则", "translate_to": "Hukum Api", "detail": "istilah/konsep" },
-    { "mandarin": "陨墨星", "translate_to": "Planet Meteorit", "detail": "istilah" }
+    { "mandarin": "陨墨星", "translate_to": "Planet Meteorit", "detail": "istilah" },
+    { "mandarin": "碑", "translate_to": "Monumen", "detail": "istilah" }
   ]
 }

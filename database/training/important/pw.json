@@ -105,6 +105,8 @@
         { "mandarin": "万灵图", "translate_to": "Peta 10.000 Roh", "detail": "istilah/benda" },
         { "mandarin": "大道之花", "translate_to": "Bunga Great Dao", "detail": "istilah/benda" },
         { "mandarin": "风族", "translate_to": "Klan Feng", "detail": "nama Klan" },
-        { "mandarin": "战仆", "translate_to": "Pelayan Perang", "detail": "istilah" }
+        { "mandarin": "战仆", "translate_to": "Pelayan Perang", "detail": "istilah" },
+        { "mandarin": "天功", "translate_to": "Teknik Langit", "detail": "istilah" },
+        { "mandarin": "神药", "translate_to": "Obat Dewa", "detail": "istilah" }
     ]
 }
