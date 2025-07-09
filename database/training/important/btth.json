@@ -168,6 +168,8 @@
     { "mandarin": "邙天尺", "translate_to": "Mang Tian Chi", "detail": "nama karakter" },
     { "mandarin": "能量体", "translate_to": "tubuh energi", "detail": "istilah" },
     { "mandarin": "能量核", "translate_to": "inti energi", "detail": "istilah" },
-    { "mandarin": "覆地印", "translate_to": "Overturning Land Seal", "detail": "nama teknik" }
+    { "mandarin": "覆地印", "translate_to": "Overturning Land Seal", "detail": "nama teknik" },
+    { "mandarin": "远古噬虫", "translate_to": "Serangga Penelan Kuno", "detail": "nama monster" },
+    { "mandarin": "青阳都统", "translate_to": "Panglima Qingyang", "detail": "nama monster" }
   ]
 }

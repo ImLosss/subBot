@@ -108,6 +108,13 @@
     { "mandarin": "老七", "translate_to": "Murid Ketujuh", "detail": "istilah" },
     { "mandarin": "大竹峰一脉", "translate_to": "aliran Puncak Dazhu", "detail": "istilah" },
     { "mandarin": "小竹峰", "translate_to": "Puncak Xiaozhu", "detail": "nama tempat" },
-    { "mandarin": "不易", "translate_to": "Buyi", "detail": "nama karakter" }
+    { "mandarin": "不易", "translate_to": "Buyi", "detail": "nama karakter" },
+    { "mandarin": "落神关", "translate_to": "Gerbang Luoshen", "detail": "istilah" },
+    { "mandarin": "戾气", "translate_to": "aura jahat", "detail": "istilah" },
+    { "mandarin": "兽妖", "translate_to": "siluman monster", "detail": "istilah" },
+    { "mandarin": "兽潮", "translate_to": "gelombang monster", "detail": "istilah" },
+    { "mandarin": "毒蛇谷", "translate_to": "Lembah Racun Ular", "detail": "istilah" },
+    { "mandarin": "秦无炎", "translate_to": "Qin Wuyan", "detail": "nama karakter" },
+    { "mandarin": "噬魂", "translate_to": "Pemakan Jiwa", "detail": "istilah" }
   ]
 }
