@@ -46,7 +46,6 @@
         { "mandarin": "雷劫", "translate_to": "Petaka Petir", "detail": "istilah" },
         { "mandarin": "天河水", "translate_to": "Air Sungai Langit", "detail": "istilah/benda" },
         { "mandarin": "天骄", "translate_to": "Jenius", "detail": "istilah/julukan" },
-        { "mandarin": "大道铡刀", "translate_to": "Pedang Great Dao", "detail": "nama senjata" },
         { "mandarin": "斩魂消魄", "translate_to": "Memotong dan Memusnahkan Roh", "detail": "istilah/teknik" },
         { "mandarin": "灭度苍生", "translate_to": "Memusnahkan Makhluk Hidup", "detail": "istilah/teknik" },
         { "mandarin": "道则", "translate_to": "Aturan Dao", "detail": "istilah/konsep" },
@@ -80,7 +79,6 @@
         { "mandarin": "走火入魔", "translate_to": "Kerasukan", "detail": "istilah" },
         { "mandarin": "小千世界", "translate_to": "Seribu Dunia Kecil", "detail": "istilah/tempat" },
         { "mandarin": "雷劫之液", "translate_to": "Cairan Petaka Petir", "detail": "istilah/benda" },
-        { "mandarin": "仙殿", "translate_to": "Kuil Immortal", "detail": "nama tempat/organisasi" },
         { "mandarin": "主人", "translate_to": "Majikan", "detail": "istilah/sebutan" },
         { "mandarin": "宁川", "translate_to": "Ning Chuan", "detail": "nama karakter" },
         { "mandarin": "约战", "translate_to": "Pertarungan yang dijanjikan", "detail": "istilah/aksi" },
@@ -107,6 +105,9 @@
         { "mandarin": "风族", "translate_to": "Klan Feng", "detail": "nama Klan" },
         { "mandarin": "战仆", "translate_to": "Pelayan Perang", "detail": "istilah" },
         { "mandarin": "天功", "translate_to": "Teknik Langit", "detail": "istilah" },
-        { "mandarin": "神药", "translate_to": "Obat Dewa", "detail": "istilah" }
+        { "mandarin": "神药", "translate_to": "Obat Dewa", "detail": "istilah" },
+        { "mandarin": "大道铡刀", "translate_to": "Pedang Great Dao", "detail": "nama senjata" },
+        { "mandarin": "大罗剑胎", "translate_to": "Pedang Great Luo", "detail": "nama senjata" },
+        { "mandarin": "灭帝剑", "translate_to": "Pedang Penghancur Kaisar", "detail": "nama senjata" }
     ]
 }
