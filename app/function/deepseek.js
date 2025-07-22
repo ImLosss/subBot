@@ -3,8 +3,13 @@ const axios = require('axios');
 const fs = require('fs');
 const console = require('console');
 const { cutVal, splitSrt, readJSONFileSync, writeJSONFileSync } = require('function/function');
+const { getSRTFilesFromFolder } = require('function/getTrainingData');
 
+<<<<<<< HEAD
 async function deepseek(prompt, dirChat, globalChat, chat) {
+=======
+async function deepseek(prompt, dirChat, dirDataset, globalChat, chat) {
+>>>>>>> mode3
     const prompts = splitSrt(prompt);
 
     console.log(prompts.length, 'Prompts length after split');
@@ -20,22 +25,21 @@ async function deepseek(prompt, dirChat, globalChat, chat) {
 
         let line = prompt.split('\n')[0].trim();
 
-        if(!Number(line)) return 'format tidak valid';
+        // if(!Number(line)) return 'format tidak valid';
 
         if(i == 0) prompt = `Selalu gunakan tanda baca saat menerjemahkan tiap kalimat (!, ?, titik, koma)\n\n${ prompt }`;
 
         console.log(i, 'index');
-            
+
+        let trainingData = readJSONFileSync(dirDataset);
+        trainingData.LEARN_THIS = getSRTFilesFromFolder(dirChat);
+
         let chatHistory = [];
-        
-        if(fs.existsSync(dirChat)) {
-            chatHistory = readJSONFileSync(dirChat)
-        }
-
         chatHistory.unshift({role: "system", content: globalChat});
+        chatHistory.push({role: "system", content: `Gunakan dan pelajari dataset berikut sebagai refrensi dalam menerjemahkan srt yang dikirimkan:\n\n${ JSON.stringify(trainingData) }`});
+        chatHistory.push(...tempChatHistory);
+        chatHistory.push({role: "user", content: `Terjemahkan tanpa tambahan komentar apapun, dan selalu gunakan tanda baca di tiap kalimat:\n${prompt}`});
 
-        chatHistory = chatHistory.concat(tempChatHistory);
-        chatHistory.push({role: "user", content: prompt});
         const response = await reqDeepseek(chatHistory, 'deepseek-chat')
 
         if(!response.status) {
@@ -57,6 +61,7 @@ async function deepseek(prompt, dirChat, globalChat, chat) {
         totToken+= response.total_tokens;
         totReq+=1;
 
+<<<<<<< HEAD
         if(!response.message.startsWith(line)){
             i--
             repeatReq+=1;
@@ -64,18 +69,29 @@ async function deepseek(prompt, dirChat, globalChat, chat) {
             // console.log(response.message, 'response');
             console.log('repeat');
             chat.sendMessage(`Gagal: ${ response.message }`);
+=======
+        // if(!response.message.startsWith(line)){
+        //     i--
+        //     repeatReq+=1;
+        //     console.log('repeat');
+>>>>>>> mode3
 
-            if(repeatReq > 5) if(str != "") return str;
-            else return 'cancelled';
-            continue;
-        }
+        //     if(repeatReq > 5) if(str != "") return str;
+        //     else return 'cancelled';
+        //     continue;
+        // }
 
         tempChatHistory.push({role: "user", content: prompt});
         tempChatHistory.push({role: "assistant", content: response.message});
 
         if(tempChatHistory.length > 4) tempChatHistory.splice(0, 2);
 
+<<<<<<< HEAD
         if(i < prompts.length - 1) chat.sendMessage(`${ i + 1 }/${ prompts.length }\n\n${ response.message }`);
+=======
+        chat.sendMessage(`[Total Req: ${i+1}/${prompts.length}]\n[max 50 lines/Req]\n\n${response.message}`);
+
+>>>>>>> mode3
         str+=`${ response.message }\n\n`;
 
         await new Promise(resolve => setTimeout(resolve, 1000)); // Delay for 1 second
@@ -155,10 +171,17 @@ async function reqDeepseek(chatHistory, model) {
         stop: null,
         stream: false,
         stream_options: null,
-        temperature: 1,
+        temperature: 1.3,
         tools: null,
         tool_choice: 'none',
     };
+<<<<<<< HEAD
+=======
+
+    const response = await axios.post(url, data, { headers });
+    // console.log(response.data);
+    if(response.data == '') return { status: false, message: error };
+>>>>>>> mode3
     
     try {
         const response = await axios.post(url, data, { headers, timeout: 300000 });
