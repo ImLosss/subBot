@@ -5,11 +5,7 @@ const console = require('console');
 const { cutVal, splitSrt, readJSONFileSync, writeJSONFileSync } = require('function/function');
 const { getSRTFilesFromFolder } = require('function/getTrainingData');
 
-<<<<<<< HEAD
-async function deepseek(prompt, dirChat, globalChat, chat) {
-=======
 async function deepseek(prompt, dirChat, dirDataset, globalChat, chat) {
->>>>>>> mode3
     const prompts = splitSrt(prompt);
 
     console.log(prompts.length, 'Prompts length after split');
@@ -61,20 +57,10 @@ async function deepseek(prompt, dirChat, dirDataset, globalChat, chat) {
         totToken+= response.total_tokens;
         totReq+=1;
 
-<<<<<<< HEAD
-        if(!response.message.startsWith(line)){
-            i--
-            repeatReq+=1;
-            // console.log(chatHistory, 'chatHistory');
-            // console.log(response.message, 'response');
-            console.log('repeat');
-            chat.sendMessage(`Gagal: ${ response.message }`);
-=======
         // if(!response.message.startsWith(line)){
         //     i--
         //     repeatReq+=1;
         //     console.log('repeat');
->>>>>>> mode3
 
         //     if(repeatReq > 5) if(str != "") return str;
         //     else return 'cancelled';
@@ -86,12 +72,8 @@ async function deepseek(prompt, dirChat, dirDataset, globalChat, chat) {
 
         if(tempChatHistory.length > 4) tempChatHistory.splice(0, 2);
 
-<<<<<<< HEAD
-        if(i < prompts.length - 1) chat.sendMessage(`${ i + 1 }/${ prompts.length }\n\n${ response.message }`);
-=======
         chat.sendMessage(`[Total Req: ${i+1}/${prompts.length}]\n[max 50 lines/Req]\n\n${response.message}`);
 
->>>>>>> mode3
         str+=`${ response.message }\n\n`;
 
         await new Promise(resolve => setTimeout(resolve, 1000)); // Delay for 1 second
@@ -175,13 +157,10 @@ async function reqDeepseek(chatHistory, model) {
         tools: null,
         tool_choice: 'none',
     };
-<<<<<<< HEAD
-=======
 
     const response = await axios.post(url, data, { headers });
     // console.log(response.data);
     if(response.data == '') return { status: false, message: error };
->>>>>>> mode3
     
     try {
         const response = await axios.post(url, data, { headers, timeout: 300000 });
