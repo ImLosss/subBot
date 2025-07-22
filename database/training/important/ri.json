@@ -57,6 +57,7 @@
         { "mandarin": "禁幡", "translate_to": "Bendera Terlarang", "detail": "nama artefak/spesifik item" },
         { "mandarin": "灵兽", "translate_to": "Binatang Roh", "detail": "hewan spiritual" },
         { "mandarin": "古神之地", "translate_to": "Tanah Dewa Kuno", "detail": "tempat/alam khusus" },
+        { "mandarin": "古神", "translate_to": "Dewa Kuno", "detail": "istilah" },
         { "mandarin": "关卡", "translate_to": "area inti", "detail": "bagian penting/ruang ujian" },
         { "mandarin": "天劫", "translate_to": "Petaka Langit", "detail": "bencana surgawi/tribulasi" },
         { "mandarin": "小成", "translate_to": "tingkat dasar", "detail": "tahapan kemajuan teknik/artefak" },
@@ -144,6 +145,23 @@
         { "mandarin": "术咒师", "translate_to": "Master Kutukan", "detail": "julukan" },
         { "mandarin": "战咒师", "translate_to": "Master Kutukan Perang", "detail": "julukan" },
         { "mandarin": "符叶", "translate_to": "Simbol Daun", "detail": "istilah" },
-        { "mandarin": "术法", "translate_to": "Teknik Sihir", "detail": "istilah" }
+        { "mandarin": "术法", "translate_to": "Teknik Sihir", "detail": "istilah" },
+        { "mandarin": "朱雀子", "translate_to": "Ketua Vermillion", "detail": "jabatan/gelar" },
+        { "mandarin": "修星之晶 ", "translate_to": "Kristal Bintang", "detail": "istilah" },
+        { "mandarin": "修星之心 ", "translate_to": "Hati Kultivasi Bintang", "detail": "istilah" },
+        { "mandarin": "拓森 ", "translate_to": "Tuo Sen", "detail": "nama orang" },
+        { "mandarin": "云雀子 ", "translate_to": "Yunque Zi", "detail": "nama orang" },
+        { "mandarin": "地魄门 ", "translate_to": "Sekte Earth Soul", "detail": "nama sekte" },
+        { "mandarin": "天玉宗 ", "translate_to": "Sekte Heavenly Jade", "detail": "nama sekte" },
+        { "mandarin": "水墨国 ", "translate_to": "Negara Shuimo", "detail": "nama negara" },
+        { "mandarin": "牡丹国 ", "translate_to": "Negara Mudan", "detail": "nama negara" },
+        { "mandarin": "秦国", "translate_to": "Negara Qin", "detail": "nama negara" },
+        { "mandarin": "朱雀墓 ", "translate_to": "Makam Vermillion", "detail": "nama tempat" },
+        { "mandarin": "轮回树 ", "translate_to": "Pohon Reinkarnasi", "detail": "istilah" },
+        { "mandarin": "炉鼎 ", "translate_to": "tungku", "detail": "istilah" },
+        { "mandarin": "天运星 ", "translate_to": "Planet Tianyun", "detail": "nama planet" },
+        { "mandarin": "弥勒宗 ", "translate_to": "Sekte Maitreya", "detail": "nama sekte" },
+        { "mandarin": "万夫侯 ", "translate_to": "Marquis", "detail": "nama gelar" },
+        { "mandarin": "雷吉 ", "translate_to": "Lei Ji", "detail": "nama orang" }
     ]
 }

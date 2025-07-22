@@ -108,6 +108,8 @@
         { "mandarin": "神药", "translate_to": "Obat Dewa", "detail": "istilah" },
         { "mandarin": "大道铡刀", "translate_to": "Pedang Great Dao", "detail": "nama senjata" },
         { "mandarin": "大罗剑胎", "translate_to": "Pedang Great Luo", "detail": "nama senjata" },
-        { "mandarin": "灭帝剑", "translate_to": "Pedang Penghancur Kaisar", "detail": "nama senjata" }
+        { "mandarin": "灭帝剑", "translate_to": "Pedang Penghancur Kaisar", "detail": "nama senjata" },
+        { "mandarin": "鲲鹏法", "translate_to": "Teknik Kunpeng", "detail": "nama senjata" },
+        { "mandarin": "六道轮回天功", "translate_to": "Teknik Enam Jalan Reinkarnasi", "detail": "nama senjata" }
     ]
 }

@@ -9,6 +9,7 @@ const { wdqk } = require('controller/WdqkController');
 const { seeu } = require('controller/SeeuController');
 const { ss } = require('controller/SwallowedController');
 const { sl } = require('controller/SoulLandController');
+const { ec } = require('controller/EclipseController');
 const { jd } = require('controller/JadeDynastyController');
 const { img } = require('controller/ImageController');
 const { cutVal } = require("function/function");
@@ -26,7 +27,7 @@ module.exports = (function() {
                 'ss': (msg, sender, client, arg, chat) => ss(msg, arg, chat),
                 'tes': (msg, sender, client, arg, chat) => btth(msg, arg, chat),
                 'jd': (msg, sender, client, arg, chat) => jd(msg, arg, chat),
-                'sl': (msg, sender, client, arg, chat) => sl(msg, arg, chat),
+                'ec': (msg, sender, client, arg, chat) => ec(msg, arg, chat),
                 'img': (msg, sender, client, arg, chat) => img(msg, arg, chat),
             };    
             
