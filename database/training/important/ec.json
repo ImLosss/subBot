@@ -1,4 +1,13 @@
 {
+    "LIST_CULTIVATION": [
+        { "mandarin": "练气", "replace": "Qi Refining" },
+        { "mandarin": "筑基", "replace": "Foundation Establishment" },
+        { "mandarin": "金丹", "replace": "Golden Core" },
+        { "mandarin": "元婴", "replace": "Nascent Soul" },
+        { "mandarin": "乾元", "replace": "Origin Essence" },
+        { "mandarin": "无相", "replace": "Transcendent" },
+        { "mandarin": "太清", "replace": "Supreme Purity" }
+    ],
     "REPLACE_THIS": [
         { "mandarin": "云望舒", "translate_to": "Yun Wangshu", "detail": "nama karakter utama" },
         { "mandarin": "元婴境", "translate_to": "Tahap Nascent Soul", "detail": "tingkat kultivasi" },
@@ -57,6 +66,18 @@
         { "mandarin": "曦云二式", "translate_to": "Awan Fajar Jurus Kedua", "detail": "nama teknik bertarung" },
         { "mandarin": "光阴过隙", "translate_to": "Waktu Berlalu", "detail": "nama serangan" },
         { "mandarin": "金丹中期", "translate_to": "Pertengahan Golden Core", "detail": "tingkat kultivasi" },
-        { "mandarin": "金丹初期", "translate_to": "Tahap Awal Golden Core", "detail": "tingkat kultivasi" }
+        { "mandarin": "金丹初期", "translate_to": "Tahap Awal Golden Core", "detail": "tingkat kultivasi" },
+        { "mandarin": "金丹期", "translate_to": "Tahap Golden Core", "detail": "tingkat kultivasi" },
+        { "mandarin": "玉华都城", "translate_to": "Kota Yuhua", "detail": "nama kota/ibukota, bentuk lengkap" },
+        { "mandarin": "锦耀", "translate_to": "Jinyao", "detail": "nama karakter, nama panggilan" },
+        { "mandarin": "耀儿", "translate_to": "Yao'er", "detail": "nama panggilan untuk Jinyao" },
+        { "mandarin": "师兄", "translate_to": "Kakak Seperguruan", "detail": "panggilan senior satu guru" },
+        { "mandarin": "师妹", "translate_to": "Adik Seperguruan", "detail": "panggilan junior satu guru" },
+        { "mandarin": "幻灵", "translate_to": "Roh Ilusi", "detail": "nama teknik/roh" },
+        { "mandarin": "流云织命手", "translate_to": "Tangan Perajut Nasib", "detail": "nama teknik/jurus" },
+        { "mandarin": "黑晶", "translate_to": "Kristal Hitam", "detail": "artefak/material" },
+        { "mandarin": "妖女", "translate_to": "wanita iblis", "detail": "istilah penghinaan" },
+        { "mandarin": "魔修", "translate_to": "Kultivator Iblis", "detail": "praktisi kultivasi iblis" },
+        { "mandarin": "长老", "translate_to": "tetua", "detail": "jabatan senior sekte" }
     ]
 }
